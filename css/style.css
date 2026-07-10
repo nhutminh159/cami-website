@@ -655,33 +655,115 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .process-grid { grid-template-columns: repeat(2,1fr); }
 }
 
+/* ===== TABLET & MOBILE (768px) ===== */
 @media (max-width: 768px) {
-  .section { padding: 64px 0; }
+  .section { padding: 56px 0; }
+  .wrap { padding: 0 20px; }
+
+  /* Navbar */
   .nav-links { display: none; }
   .nav-cta { display: none; }
   .burger { display: flex; }
-  .services-grid { grid-template-columns: 1fr; }
-  .offers-grid { grid-template-columns: 1fr; }
-  .why-grid { grid-template-columns: 1fr; }
-  .blog-grid { grid-template-columns: 1fr; }
-  .gallery-grid { grid-template-columns: 1fr 1fr; }
-  .gallery-item:first-child { grid-column: span 2; }
-  .testimonial-cards { grid-template-columns: 1fr; }
-  .hero-stats { gap: 24px; flex-wrap: wrap; }
-  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
-  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
-  .booking-info { flex-direction: column; gap: 20px; }
+
+  /* Hero - fix overflow & layout */
+  .hero { min-height: 100svh; }
+  .hero-content { padding-top: 90px; max-width: 100%; }
+  .hero h1 { font-size: clamp(1.7rem, 7vw, 2.4rem); }
+  .hero-h1-sub { font-size: clamp(1.4rem, 6vw, 2rem); white-space: normal; }
+  .hero-desc { font-size: .95rem; white-space: normal; max-width: 100%; }
+  .hero-sub { font-size: 1rem; }
+  .hero-actions { flex-direction: column; gap: 12px; }
+  .hero-actions .btn { width: 100%; justify-content: center; }
+
+  /* Stats: 2x2 grid */
+  .hero-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+  .hero-stat { border-right: 1px solid rgba(201,151,26,.15); border-bottom: 1px solid rgba(201,151,26,.15); }
+  .hero-stat:nth-child(2) { border-right: none; }
+  .hero-stat:nth-child(3) { border-bottom: none; }
+  .hero-stat:nth-child(4) { border-right: none; border-bottom: none; }
+  .hero-stat strong { font-size: 1.4rem; white-space: nowrap; }
+  .hero-stat span { font-size: .65rem; white-space: nowrap; }
+
+  /* About */
+  .about-grid { grid-template-columns: 1fr; gap: 36px; }
+  .about-imgs { max-width: 100%; }
   .about-img-float { display: none; }
   .about-badge { left: 0; }
+
+  /* Services */
+  .services-grid { grid-template-columns: 1fr; }
+
+  /* Process */
   .process-grid { grid-template-columns: repeat(2,1fr); }
+
+  /* Offers */
+  .offers-grid { grid-template-columns: 1fr; }
+
+  /* Gallery */
+  .gallery-grid { grid-template-columns: 1fr 1fr; }
+  .gallery-item:first-child { grid-column: span 2; }
+
+  /* Testimonials */
+  .testimonial-cards { grid-template-columns: 1fr; }
+
+  /* Why CAMI */
+  .why-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Blog */
+  .blog-grid { grid-template-columns: 1fr; }
+
+  /* Booking */
+  .booking-info { flex-direction: column; gap: 20px; }
+
+  /* Footer */
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+
+  /* Floating buttons - nhỏ lại cho mobile */
+  .floating-zalo { bottom: 20px; right: 16px; gap: 10px; }
+  .float-btn { width: 52px; height: 52px; }
+  .float-zalo-text { font-size: .9rem; }
+  .float-label { display: none; }
 }
 
+/* ===== MOBILE NHỎ (480px - iPhone SE, Android nhỏ) ===== */
 @media (max-width: 480px) {
-  .section { padding: 48px 0; }
-  .wrap { padding: 0 18px; }
-  .hero h1 { font-size: 1.9rem; }
-  .hero-actions { flex-direction: column; }
+  .section { padding: 44px 0; }
+  .wrap { padding: 0 16px; }
+
+  /* Hero */
+  .hero h1 { font-size: 1.65rem; line-height: 1.2; }
+  .hero-h1-sub { font-size: 1.35rem; white-space: normal; }
+  .hero-sub { font-size: .9rem; }
+  .hero-desc { font-size: .9rem; }
+
+  /* Stats 2x2 compact */
+  .hero-stat strong { font-size: 1.25rem; }
+  .hero-stat span { font-size: .6rem; letter-spacing: .06em; }
+  .hero-stat { padding: 14px 6px; }
+
+  /* Process */
+  .process-grid { grid-template-columns: 1fr; }
+
+  /* Gallery 1 cột */
   .gallery-grid { grid-template-columns: 1fr; }
   .gallery-item:first-child { grid-column: span 1; aspect-ratio: 4/3; }
-  .process-grid { grid-template-columns: 1fr; }
+
+  /* Why - 1 cột */
+  .why-grid { grid-template-columns: 1fr; }
+
+  /* Section headings */
+  .section-title { font-size: 1.6rem; }
+}
+
+/* ===== MOBILE RẤT NHỎ (360px - Android cũ) ===== */
+@media (max-width: 360px) {
+  .hero h1 { font-size: 1.45rem; }
+  .hero-h1-sub { font-size: 1.2rem; }
+  .btn { padding: 13px 22px; font-size: .88rem; }
+  .float-btn { width: 46px; height: 46px; }
 }
