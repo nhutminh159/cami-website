@@ -122,6 +122,38 @@ const aboutObs = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 document.querySelector('.about-content') && aboutObs.observe(document.querySelector('.about-content'));
 
+// About section mobile image slider
+(function () {
+  const wrap = document.querySelector('.about-slides-wrap');
+  const dots = document.querySelectorAll('.about-dot');
+  if (!wrap || !dots.length) return;
+  let idx = 0, timer;
+
+  function goAbout(i) {
+    idx = (i + dots.length) % dots.length;
+    wrap.style.transform = `translateX(-${idx * 100}%)`;
+    dots.forEach((d, j) => d.classList.toggle('active', j === idx));
+  }
+
+  function startAboutAuto() {
+    timer = setInterval(() => goAbout(idx + 1), 5000);
+  }
+
+  dots.forEach((d, i) => {
+    d.addEventListener('click', () => { clearInterval(timer); goAbout(i); startAboutAuto(); });
+  });
+
+  // Touch swipe support
+  let tx = 0;
+  wrap.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+  wrap.addEventListener('touchend', e => {
+    const dx = tx - e.changedTouches[0].clientX;
+    if (Math.abs(dx) > 40) { clearInterval(timer); goAbout(idx + (dx > 0 ? 1 : -1)); startAboutAuto(); }
+  }, { passive: true });
+
+  startAboutAuto();
+})();
+
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
