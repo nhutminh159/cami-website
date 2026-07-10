@@ -290,7 +290,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 /* ===== ABOUT ===== */
 .about { background: var(--cream2); }
-.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: stretch; }
 
 /* Ẩn layout ảnh cũ (desktop lẫn mobile đều dùng slider) */
 .about-imgs { position: relative; }
@@ -389,24 +389,36 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .about-img-main:hover img { transform: scale(1.04); }
 .about-img-float:hover img { transform: scale(1.06); }
 
-/* About slider — hiển thị cả desktop lẫn mobile */
+/* About slider — dùng chung desktop & mobile */
+.about-imgs {
+  /* Kéo dài bằng chiều cao cột nội dung */
+  display: flex;
+  align-self: stretch;
+}
 .about-slider {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   position: relative;
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow);
+  min-height: 420px;
 }
 .about-slides-wrap {
   display: flex;
+  flex: 1;
   transition: transform .6s cubic-bezier(.4,0,.2,1);
 }
 .about-slide {
   flex: 0 0 100%;
-  aspect-ratio: 4/5;
+  /* Chiều cao tự động theo slider container */
+  min-height: 100%;
   overflow: hidden;
+  position: relative;
 }
 .about-slide img {
+  position: absolute; inset: 0;
   width: 100%; height: 100%; object-fit: cover;
   display: block;
   transition: transform .6s ease;
@@ -414,7 +426,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .about-slider:hover .about-slide img { transform: scale(1.03); }
 .about-slider-dots {
   position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%);
-  display: flex; gap: 8px;
+  display: flex; gap: 8px; z-index: 2;
 }
 .about-dot {
   width: 8px; height: 8px; border-radius: 50%;
@@ -791,11 +803,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .hero-stat span { font-size: .65rem; white-space: nowrap; }
 
   /* About — mobile */
-  .about-grid { grid-template-columns: 1fr; gap: 36px; }
-  .about-imgs { max-width: 100%; }
+  .about-grid { grid-template-columns: 1fr; gap: 36px; align-items: start; }
+  .about-imgs { display: block; }
   .about-badge { display: none; }
-  /* Mobile: aspect-ratio nằm ngang thoáng hơn */
-  .about-slide { aspect-ratio: 4/3; }
+  .about-slider { min-height: unset; }
+  /* Mobile: tỉ lệ nằm ngang */
+  .about-slide { min-height: unset; aspect-ratio: 4/3; position: static; }
+  .about-slide img { position: static; width: 100%; height: 100%; }
 
   /* Services */
   .services-grid { grid-template-columns: 1fr; }
