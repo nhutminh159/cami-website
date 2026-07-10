@@ -104,6 +104,24 @@ lightbox?.addEventListener('click', (e) => {
   if (e.target === lightbox) lightbox.classList.remove('open');
 });
 
+// About section — stagger animate paragraphs & feature cards
+const aboutObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      // Paragraphs
+      e.target.querySelectorAll('.about-content p').forEach((p, i) => {
+        setTimeout(() => p.classList.add('visible'), i * 120);
+      });
+      // Feature cards
+      e.target.querySelectorAll('.about-feature').forEach((f, i) => {
+        setTimeout(() => f.classList.add('visible'), 200 + i * 130);
+      });
+      aboutObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.15 });
+document.querySelector('.about-content') && aboutObs.observe(document.querySelector('.about-content'));
+
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {

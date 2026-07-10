@@ -314,24 +314,83 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .about-badge span { font-size: .65rem; text-transform: uppercase; letter-spacing: .15em; font-weight: 600; }
 
 .about-content { padding-left: 8px; }
-.about-content h2 { font-size: clamp(1.8rem,3vw,2.6rem); color: var(--green); margin-bottom: 20px; }
-.about-content p { color: var(--muted); margin-bottom: 16px; font-size: 1.02rem; }
-.about-features { display: flex; flex-direction: column; gap: 16px; margin: 32px 0 36px; }
+
+/* Tiêu đề About nổi bật, căn giữa */
+.about-h2 {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  color: var(--green);
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -.01em;
+  position: relative;
+  padding-bottom: 18px;
+}
+.about-h2::after {
+  content: '';
+  position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);
+  width: 64px; height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--gold2));
+  border-radius: 2px;
+}
+
+.about-content p {
+  color: var(--muted); margin-bottom: 16px; font-size: 1.02rem;
+  opacity: 0; transform: translateY(16px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.about-content p.visible { opacity: 1; transform: none; }
+
+.about-features { display: flex; flex-direction: column; gap: 14px; margin: 28px 0 36px; }
 .about-feature {
   display: flex; align-items: flex-start; gap: 16px;
-  padding: 18px 22px; background: white;
+  padding: 16px 20px; background: white;
   border-radius: var(--radius); border-left: 3px solid var(--gold);
   box-shadow: 0 4px 16px rgba(14,43,34,.06);
+  transition: transform .3s ease, box-shadow .3s ease;
+  opacity: 0; transform: translateX(-20px);
+  transition: opacity .5s ease, transform .5s ease, box-shadow .3s;
+}
+.about-feature.visible { opacity: 1; transform: none; }
+.about-feature:hover {
+  transform: translateX(4px);
+  box-shadow: 0 8px 28px rgba(14,43,34,.12);
+  border-left-color: var(--gold2);
 }
 .about-feature-icon {
   width: 44px; height: 44px; border-radius: 50%;
   background: linear-gradient(135deg, var(--green), var(--green3));
   display: flex; align-items: center; justify-content: center;
   flex-shrink: 0;
+  transition: transform .3s ease;
 }
+.about-feature:hover .about-feature-icon { transform: scale(1.1) rotate(-5deg); }
 .about-feature-icon svg { width: 22px; height: 22px; stroke: var(--gold2); fill: none; stroke-width: 2; }
-.about-feature h4 { font-size: .95rem; color: var(--green); margin-bottom: 4px; }
-.about-feature p { font-size: .88rem; color: var(--muted); margin: 0; }
+.about-feature h4 {
+  font-size: .93rem; color: var(--green); margin-bottom: 4px;
+  white-space: normal; overflow: visible;
+}
+.about-feature p { font-size: .86rem; color: var(--muted); margin: 0; opacity: 1; transform: none; }
+
+/* Shimmer effect cho ảnh About */
+.about-img-shimmer { position: relative; overflow: hidden; }
+.about-img-shimmer::after {
+  content: '';
+  position: absolute; top: 0; left: -100%;
+  width: 60%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.18), transparent);
+  transform: skewX(-15deg);
+  animation: about-shimmer 4s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes about-shimmer { 0%,50%{left:-100%} 70%,100%{left:150%} }
+
+/* Zoom subtle khi hover ảnh */
+.about-img-main img, .about-img-float img {
+  transition: transform .6s ease;
+}
+.about-img-main:hover img { transform: scale(1.04); }
+.about-img-float:hover img { transform: scale(1.06); }
 
 /* ===== SERVICES ===== */
 .services { background: var(--green); }
