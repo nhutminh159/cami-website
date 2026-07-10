@@ -373,17 +373,21 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .about-feature p { font-size: .86rem; color: var(--muted); margin: 0; opacity: 1; transform: none; }
 
 /* Shimmer effect cho ảnh About */
-.about-img-shimmer { position: relative; overflow: hidden; }
+.about-img-shimmer {
+  position: relative;
+  overflow: hidden !important;
+}
 .about-img-shimmer::after {
   content: '';
   position: absolute; top: 0; left: -100%;
-  width: 60%; height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,.18), transparent);
+  width: 55%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.22), transparent);
   transform: skewX(-15deg);
-  animation: about-shimmer 4s ease-in-out infinite;
+  animation: about-shimmer 3.5s ease-in-out infinite;
   pointer-events: none;
+  z-index: 2;
 }
-@keyframes about-shimmer { 0%,50%{left:-100%} 70%,100%{left:150%} }
+@keyframes about-shimmer { 0%,45%{left:-100%} 65%,100%{left:150%} }
 
 /* Zoom subtle khi hover ảnh */
 .about-img-main img, .about-img-float img {
@@ -747,11 +751,28 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .hero-stat strong { font-size: 1.4rem; white-space: nowrap; }
   .hero-stat span { font-size: .65rem; white-space: nowrap; }
 
-  /* About */
+  /* About — hiển thị cả 2 ảnh trên mobile */
   .about-grid { grid-template-columns: 1fr; gap: 36px; }
-  .about-imgs { max-width: 100%; }
-  .about-img-float { display: none; }
-  .about-badge { left: 0; }
+  .about-imgs {
+    max-width: 100%;
+    display: flex; flex-direction: column; gap: 12px;
+    padding-bottom: 0;
+  }
+  .about-img-main {
+    position: static;
+    aspect-ratio: 4/3;
+    border-radius: 16px;
+  }
+  .about-img-float {
+    position: static !important;
+    width: 100% !important;
+    bottom: auto !important; right: auto !important;
+    aspect-ratio: 4/3 !important;
+    border-radius: 16px;
+    border: 3px solid var(--cream2);
+    display: block !important;
+  }
+  .about-badge { left: 0; top: 12px; }
 
   /* Services */
   .services-grid { grid-template-columns: 1fr; }
