@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://goidaucami.com/sitemap.xml

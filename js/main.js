@@ -122,37 +122,149 @@ const aboutObs = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 document.querySelector('.about-content') && aboutObs.observe(document.querySelector('.about-content'));
 
-// About section mobile image slider
+// About slider — fade + Ken Burns (giống hero)
 (function () {
-  const wrap = document.querySelector('.about-slides-wrap');
-  const dots = document.querySelectorAll('.about-dot');
-  if (!wrap || !dots.length) return;
+  const slider   = document.querySelector('.about-slider');
+  const slides   = document.querySelectorAll('.about-slide');
+  const dots     = document.querySelectorAll('.about-dot');
+  const progBar  = document.querySelector('.about-progress-bar');
+  if (!slider || !slides.length) return;
+
   let idx = 0, timer;
+  const INTERVAL = 5000;
 
   function goAbout(i) {
-    idx = (i + dots.length) % dots.length;
-    wrap.style.transform = `translateX(-${idx * 100}%)`;
-    dots.forEach((d, j) => d.classList.toggle('active', j === idx));
+    // Xoá active cũ
+    slides[idx].classList.remove('active');
+    dots[idx]?.setAttribute('aria-pressed', 'false');
+    dots[idx]?.classList.remove('active');
+
+    idx = (i + slides.length) % slides.length;
+
+    // Reset Ken Burns bằng cách remove rồi add lại class
+    const img = slides[idx].querySelector('img');
+    if (img) { img.style.animation = 'none'; img.offsetHeight; img.style.animation = ''; }
+
+    slides[idx].classList.add('active');
+    dots[idx]?.setAttribute('aria-pressed', 'true');
+    dots[idx]?.classList.add('active');
+
+    // Reset progress bar
+    if (progBar) { progBar.style.animation = 'none'; progBar.offsetHeight; progBar.style.animation = ''; }
   }
 
-  function startAboutAuto() {
-    timer = setInterval(() => goAbout(idx + 1), 5000);
+  function startAuto() {
+    clearInterval(timer);
+    timer = setInterval(() => goAbout(idx + 1), INTERVAL);
   }
 
   dots.forEach((d, i) => {
-    d.addEventListener('click', () => { clearInterval(timer); goAbout(i); startAboutAuto(); });
+    d.addEventListener('click', () => { goAbout(i); startAuto(); });
   });
 
-  // Touch swipe support
+  // Swipe touch
   let tx = 0;
-  wrap.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
-  wrap.addEventListener('touchend', e => {
+  slider.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+  slider.addEventListener('touchend', e => {
     const dx = tx - e.changedTouches[0].clientX;
-    if (Math.abs(dx) > 40) { clearInterval(timer); goAbout(idx + (dx > 0 ? 1 : -1)); startAboutAuto(); }
+    if (Math.abs(dx) > 40) { goAbout(idx + (dx > 0 ? 1 : -1)); startAuto(); }
   }, { passive: true });
 
-  startAboutAuto();
+  startAuto();
 })();
+
+// Services tab switching
+(function () {
+  const tabs   = document.querySelectorAll('.svc-tab');
+  const panels = document.querySelectorAll('.svc-panel');
+  if (!tabs.length) return;
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const target = tab.dataset.tab;
+      tabs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
+      panels.forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+      const panel = document.getElementById('panel-' + target);
+      if (panel) panel.classList.add('active');
+    });
+  });
+})();
+
+// Gallery – Staggered Soft Reveal + Focus Hover
+(function() {
+  const galleryGrid = document.querySelector('.gallery-grid');
+  if (!galleryGrid) return;
+  const items = [...galleryGrid.querySelectorAll('.gallery-item')];
+
+  // Assign stagger delays (160ms apart, Chậm–Dịu–Êm)
+  items.forEach((item, i) => {
+    item.style.setProperty('--gi-delay', `${i * 0.16}s`);
+  });
+
+  // Entrance: reveal when gallery scrolls into view
+  const galleryObs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Small buffer so items are mid-screen before animating
+        items.forEach(item => item.classList.add('gi-visible'));
+        galleryObs.disconnect();
+      }
+    });
+  }, { threshold: 0.08 });
+  galleryObs.observe(galleryGrid);
+
+  // Hover: Focus & Subtle Zoom
+  items.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      galleryGrid.classList.add('gi-focused');
+      item.classList.add('gi-active');
+    });
+    item.addEventListener('mouseleave', () => {
+      galleryGrid.classList.remove('gi-focused');
+      item.classList.remove('gi-active');
+    });
+  });
+})();
+
+// Recruit – Staggered Soft Reveal
+(function() {
+  const recruitSection = document.querySelector('.recruit');
+  if (!recruitSection) return;
+  const items = [...recruitSection.querySelectorAll('.recruit-reveal')];
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        items.forEach(el => el.classList.add('rr-visible'));
+        obs.disconnect();
+      }
+    });
+  }, { threshold: 0.08 });
+  obs.observe(recruitSection);
+})();
+
+// Water Ripple – Offer Cards
+document.querySelectorAll('.offer-card').forEach(card => {
+  function spawnRipple(x, y) {
+    const rect = card.getBoundingClientRect();
+    const size = Math.max(rect.width, rect.height) * 2.2;
+    const el = document.createElement('span');
+    el.className = 'offer-ripple';
+    el.style.cssText = `width:${size}px;height:${size}px;left:${x - size/2}px;top:${y - size/2}px;`;
+    card.appendChild(el);
+    el.addEventListener('animationend', () => el.remove());
+  }
+  card.addEventListener('click', e => {
+    const r = card.getBoundingClientRect();
+    spawnRipple(e.clientX - r.left, e.clientY - r.top);
+  });
+  card.addEventListener('touchstart', e => {
+    const r = card.getBoundingClientRect();
+    const t = e.touches[0];
+    spawnRipple(t.clientX - r.left, t.clientY - r.top);
+  }, { passive: true });
+});
 
 // Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(a => {

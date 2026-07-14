@@ -54,6 +54,7 @@
         <li><a href="#about">Về CAMI</a></li>
         <li><a href="#services">Dịch Vụ</a></li>
         <li><a href="#offers">Ưu Đãi</a></li>
+        <li><a href="#tuyen-dung">Tuyển Dụng</a></li>
         <li><a href="#gallery">Không Gian</a></li>
         <li><a href="#blog">Blog</a></li>
         <li><a href="https://zalo.me/0909646153" target="_blank" rel="noopener" class="nav-cta">Đặt Lịch Ngay</a></li>
@@ -71,6 +72,7 @@
   <a href="#about">Về CAMI</a>
   <a href="#services">Dịch Vụ</a>
   <a href="#offers">Ưu Đãi</a>
+  <a href="#tuyen-dung">Tuyển Dụng</a>
   <a href="#gallery">Không Gian</a>
   <a href="#blog">Blog</a>
   <a href="https://zalo.me/0909646153" target="_blank" rel="noopener" class="btn btn-gold" style="margin-top:12px">Đặt Lịch Ngay</a>
@@ -147,18 +149,20 @@
           <span>Mới</span>
         </div>
 
-        <div class="about-slider">
-          <div class="about-slides-wrap">
-            <div class="about-slide about-img-shimmer">
-              <img src="images/about-main.jpg" alt="Mặt tiền tiệm CAMI" loading="lazy" style="object-position: center 30%">
+        <div class="about-slider" aria-label="Ảnh về CAMI" role="region">
+          <div class="about-slides-wrap" aria-live="polite" aria-atomic="true">
+            <div class="about-slide active about-img-shimmer">
+              <img src="images/about-main.jpg" alt="Mặt tiền tiệm CAMI Gội Đầu Thế Hệ Mới tại 153 Tôn Đản Quận 4" style="object-position: center 30%">
             </div>
             <div class="about-slide about-img-shimmer">
-              <img src="images/about-interior.jpg" alt="Không gian phòng gội đầu CAMI" loading="lazy" style="object-position: center center">
+              <img src="images/about-interior.jpg" alt="Không gian phòng gội đầu massage tại CAMI" style="object-position: center center">
             </div>
           </div>
+          <!-- Progress bar -->
+          <div class="about-progress"><div class="about-progress-bar"></div></div>
           <div class="about-slider-dots">
-            <button class="about-dot active" aria-label="Ảnh 1"></button>
-            <button class="about-dot" aria-label="Ảnh 2"></button>
+            <button class="about-dot active" aria-label="Ảnh 1" aria-pressed="true"></button>
+            <button class="about-dot" aria-label="Ảnh 2" aria-pressed="false"></button>
           </div>
         </div>
       </div>
@@ -216,190 +220,342 @@
       <span class="eyebrow">Dịch Vụ</span>
       <div class="orn"><span></span><i>✦</i><span></span></div>
       <h2>Trải Nghiệm Gội Đầu Đẳng Cấp</h2>
-      <p>Mỗi dịch vụ là một hành trình, từ làm sạch sâu đến phục hồi toàn diện.</p>
+      <p>Mỗi dịch vụ là một hành trình phục hồi, từ làm sạch sâu đến chăm sóc toàn diện.</p>
     </div>
 
-    <div class="services-grid">
-      <!-- Service 1 -->
-      <div class="service-card reveal">
-        <div class="service-img">
-          <img src="images/service-goi.png" alt="Gội Sạch Thơm tại CAMI" loading="lazy">
-        </div>
-        <div class="service-body">
-          <span class="service-tag">Cơ Bản</span>
-          <h3>Gội Sạch Thơm</h3>
-          <p>Gội sạch chuyên sâu với dầu gội thảo mộc, massage da đầu kích thích tuần hoàn, thư giãn cổ vai gáy.</p>
-          <div class="service-steps">
-            <div class="service-step"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Khai Huyệt Vùng Mặt</div>
-            <div class="service-step"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Gội Sạch 2 Lần Bằng Dầu Gội CAMI</div>
-            <div class="service-step"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Massage Đầu Thư Giãn</div>
-            <div class="service-step"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Rửa Tai Bọt Tuyết ✦</div>
-            <div class="service-step"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Ủ Tóc Mềm Mượt</div>
-            <div class="service-step"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Sấy & Xịt Dưỡng Tinh Dầu</div>
-          </div>
-          <div class="service-price">
-            <span class="price">89K</span>
-            <span class="unit">/ lần · ~45 phút</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Service 2 -->
-      <div class="service-card reveal">
-        <div class="service-img">
-          <img src="images/service-shiatsu.png" alt="Gội Shiatsu Chuyên Sâu tại CAMI" loading="lazy">
-        </div>
-        <div class="service-body">
-          <span class="service-tag">Phổ Biến</span>
-          <h3>Gội Shiatsu Chuyên Sâu</h3>
-          <p>Kỹ thuật bấm huyệt Shiatsu kết hợp gội dưỡng sinh, giảm đau cổ vai gáy, thư giãn cơ sâu, cải thiện giấc ngủ.</p>
-          <div class="service-steps">
-            <div class="service-step"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Khai Huyệt & Làm Sạch Da Mặt</div>
-            <div class="service-step"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Massage Ấn Huyệt Mặt</div>
-            <div class="service-step"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Đắp Mặt Nạ Dưỡng Sáng</div>
-            <div class="service-step"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Rửa Tai Bọt Tuyết ✦</div>
-            <div class="service-step"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Massage Cổ Vai Gáy & Thư Giãn Tay</div>
-            <div class="service-step"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Ủ Tóc + Sấy Xịt Dưỡng</div>
-          </div>
-          <div class="service-price">
-            <span class="price">149K</span>
-            <span class="unit">/ lần · ~60 phút</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Service 3 -->
-      <div class="service-card reveal">
-        <div class="service-img">
-          <img src="images/service-detox.png" alt="Gội Detox Giảm Gàu Ngứa tại CAMI" loading="lazy">
-        </div>
-        <div class="service-body">
-          <span class="service-tag">Trị Liệu</span>
-          <h3>Gội Detox Giảm Gàu, Ngứa</h3>
-          <p>Liệu trình chuyên biệt cho da đầu, detox thải độc, phun nano phục hồi nang tóc, giảm gàu và ngứa hiệu quả.</p>
-          <div class="service-steps">
-            <div class="service-step"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Làm Sạch Da, Massage Ấn Huyệt Mặt</div>
-            <div class="service-step"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Gội Sạch 2 Lần + Massage Đầu</div>
-            <div class="service-step"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Rửa Tai Bọt Tuyết ✦</div>
-            <div class="service-step"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Detox Thải Độc Da Đầu</div>
-            <div class="service-step"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Phun Nano Phục Hồi Nang Tóc</div>
-            <div class="service-step"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Ủ Tóc + Sấy Xịt Dưỡng</div>
-          </div>
-          <div class="service-price">
-            <span class="price">169K</span>
-            <span class="unit">/ lần · ~60 phút</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Service 4 -->
-      <div class="service-card reveal">
-        <div class="service-img">
-          <img src="images/customer-3.jpg" alt="CAMI Relax VIP Combo" loading="lazy">
-        </div>
-        <div class="service-body">
-          <span class="service-tag">✦ VIP Combo</span>
-          <h3>CAMI Relax – VIP Combo</h3>
-          <p>Trải nghiệm hoàn hảo nhất tại CAMI, gội đầu dưỡng sinh + body care toàn diện 12 bước bài bản.</p>
-          <div class="service-steps">
-            <div class="service-step"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Tẩy Da Chết Da Mặt</div>
-            <div class="service-step"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Gội Sạch 2 Lần + Massage Thư Giãn</div>
-            <div class="service-step"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Đắp Mặt Nạ Dưỡng Sáng</div>
-            <div class="service-step"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Rửa Tai Bọt Tuyết ✦</div>
-            <div class="service-step"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Massage Cổ Vai Gáy & Tay</div>
-            <div class="service-step"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg> Detox Thải Độc + Phun Nano</div>
-          </div>
-          <div class="service-price">
-            <span class="price">239K</span>
-            <span class="unit">/ lần · ~90 phút</span>
-          </div>
-        </div>
-      </div>
+    <!-- Tab navigation -->
+    <div class="svc-tabs" role="tablist" aria-label="Danh mục dịch vụ CAMI">
+      <button class="svc-tab active" role="tab" aria-selected="true" aria-controls="panel-goi" data-tab="goi">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        Gội Đầu
+      </button>
+      <button class="svc-tab" role="tab" aria-selected="false" aria-controls="panel-health" data-tab="health">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        Chăm Sóc Sức Khỏe
+      </button>
+      <button class="svc-tab" role="tab" aria-selected="false" aria-controls="panel-addon" data-tab="addon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+        Dịch Vụ Kết Hợp
+      </button>
     </div>
 
-    <!-- Body care section -->
-    <div style="margin-top:48px; padding: 36px; background: rgba(255,255,255,.06); border: 1px solid rgba(201,151,26,.2); border-radius:28px;" class="reveal">
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:center;">
-        <div>
-          <span class="eyebrow">Chăm Sóc Sức Khỏe</span>
-          <h3 style="font-size:clamp(1.4rem,2.5vw,2rem); color:var(--cream); margin: 10px 0 16px;">Dịch Vụ Body Care & Trị Liệu</h3>
-          <p style="color:#8fa89a; margin-bottom:20px;">Thư giãn đầu – cổ – vai – gáy, thắt lưng, đá nóng, giác hơi và ngâm chân thảo mộc. Liệu trình giúp giảm đau nhức, tăng tuần hoàn máu.</p>
-          <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:24px;">
-            <span style="background:rgba(201,151,26,.15); color:var(--gold2); padding:6px 14px; border-radius:20px; font-size:.82rem;">Thư Giãn Đầu Cổ Vai Gáy 229K</span>
-            <span style="background:rgba(201,151,26,.15); color:var(--gold2); padding:6px 14px; border-radius:20px; font-size:.82rem;">Đá Nóng Full Body 298K</span>
-            <span style="background:rgba(201,151,26,.15); color:var(--gold2); padding:6px 14px; border-radius:20px; font-size:.82rem;">Ngâm Chân Thảo Mộc 39K</span>
-            <span style="background:rgba(201,151,26,.15); color:var(--gold2); padding:6px 14px; border-radius:20px; font-size:.82rem;">Đắp Cao Ngải Cứu 89K</span>
-            <span style="background:rgba(201,151,26,.15); color:var(--gold2); padding:6px 14px; border-radius:20px; font-size:.82rem;">Giác Hơi 50K</span>
+    <!-- ── Panel 1: GỘI ĐẦU ── -->
+    <div class="svc-panel active" id="panel-goi" role="tabpanel" aria-labelledby="tab-goi">
+
+      <div class="svc-group-label">Gội Thư Giãn &amp; Cổ Vai Gáy</div>
+      <div class="svc-cards">
+
+        <!-- Card 1 -->
+        <div class="svc-card reveal">
+          <div class="svc-card-img">
+            <img src="images/svc-goi-sach.png" alt="Gội Sạch Thơm tại CAMI" loading="lazy">
           </div>
-          <a href="https://zalo.me/0909646153" target="_blank" rel="noopener" class="btn btn-gold">Đặt Lịch Ngay</a>
+          <div class="svc-card-top">
+            <div class="svc-name-wrap">
+              <h3 class="svc-name">Gội Sạch Thơm</h3>
+              <span class="svc-duration">30 phút</span>
+            </div>
+            <div class="svc-price-circle">89K</div>
+          </div>
+          <ul class="svc-steps">
+            <li><span class="svc-num">01</span>Khai Huyệt Vùng Mặt</li>
+            <li><span class="svc-num">02</span>Gội Sạch 2 Lần Bằng Dầu Gội CAMI</li>
+            <li><span class="svc-num">03</span>Massage Đầu Thư Giãn</li>
+            <li><span class="svc-num">04</span>Rửa Tai Bọt Tuyết</li>
+            <li><span class="svc-num">05</span>Ủ Tóc Mềm Mượt</li>
+            <li><span class="svc-num">06</span>Sấy Xịt Dưỡng Tinh Dầu</li>
+          </ul>
+          <a href="https://zalo.me/0909646153" target="_blank" rel="noopener" class="svc-btn">Đặt Lịch Ngay</a>
         </div>
-        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
-          <img src="images/service-body-1.png" alt="Body care tại CAMI" loading="lazy" style="border-radius:16px; object-fit:cover; width:100%; aspect-ratio:1;">
-          <img src="images/service-body-2.png" alt="Massage tại CAMI" loading="lazy" style="border-radius:16px; object-fit:cover; width:100%; aspect-ratio:1; margin-top:20px;">
-          <img src="images/service-body-3.png" alt="Dịch vụ chăm sóc tại CAMI" loading="lazy" style="border-radius:16px; object-fit:cover; width:100%; aspect-ratio:1; margin-top:-20px;">
-          <img src="images/interior-2.jpg" alt="Không gian CAMI" loading="lazy" style="border-radius:16px; object-fit:cover; width:100%; aspect-ratio:1;">
+
+        <!-- Card 2 – BEST CHOICE -->
+        <div class="svc-card svc-featured reveal">
+          <div class="svc-card-img">
+            <img src="images/svc-shiatsu.png" alt="Gội Shiatsu Chuyên Sâu tại CAMI" loading="lazy">
+          </div>
+          <div class="svc-badge">BEST CHOICE</div>
+          <div class="svc-card-top">
+            <div class="svc-name-wrap">
+              <h3 class="svc-name">Gội Shiatsu Chuyên Sâu</h3>
+              <span class="svc-duration">45 phút</span>
+            </div>
+            <div class="svc-price-circle">149K</div>
+          </div>
+          <div class="svc-gift">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+            Tặng đắp mặt nạ dưỡng sáng
+          </div>
+          <ul class="svc-steps">
+            <li><span class="svc-num">01</span>Khai Huyệt Vùng Mặt</li>
+            <li><span class="svc-num">02</span>Làm Sạch Da, Massage Ấn Huyệt Mặt</li>
+            <li><span class="svc-num">03</span>Gội Sạch 2 Lần, Massage Đầu Thư Giãn</li>
+            <li><span class="svc-num">04</span>Đắp Mặt Nạ Dưỡng Sáng</li>
+            <li><span class="svc-num">05</span>Rửa Tai Bọt Tuyết</li>
+            <li><span class="svc-num">06</span>Massage Cổ Vai Gáy &amp; Thư Giãn Tay</li>
+            <li><span class="svc-num">07</span>Ủ Tóc Mềm Mượt</li>
+            <li><span class="svc-num">08</span>Sấy Xịt Dưỡng Tinh Dầu</li>
+          </ul>
+          <a href="https://zalo.me/0909646153" target="_blank" rel="noopener" class="svc-btn">Đặt Lịch Ngay</a>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ===== PROCESS ===== -->
-<section class="process section" id="process">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="eyebrow">Quy Trình</span>
-      <div class="orn"><span></span><i>✦</i><span></span></div>
-      <h2>Các Bước Dịch Vụ Tại CAMI</h2>
-      <p>Quy trình bài bản từ 6 đến 12 bước, mỗi bước được thực hiện tỉ mỉ bởi đội ngũ kỹ thuật viên được đào tạo chuyên sâu.</p>
+      </div><!-- /svc-cards row 1 -->
+
+      <div class="svc-group-label" style="margin-top:40px;">Gội Chăm Sóc Chuyên Sâu</div>
+      <div class="svc-cards">
+
+        <!-- Card 3 – SIGNATURE -->
+        <div class="svc-card svc-featured reveal">
+          <div class="svc-card-img">
+            <img src="images/svc-detox-new.png" alt="Gội Detox Giảm Gàu Ngứa tại CAMI" loading="lazy">
+          </div>
+          <div class="svc-badge svc-badge-green">SIGNATURE</div>
+          <div class="svc-card-top">
+            <div class="svc-name-wrap">
+              <h3 class="svc-name">Gội Detox Giảm Gàu Ngứa</h3>
+              <span class="svc-duration">45 phút</span>
+            </div>
+            <div class="svc-price-circle">169K</div>
+          </div>
+          <div class="svc-gift">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+            Tặng hấp dầu phục hồi nang tóc
+          </div>
+          <ul class="svc-steps">
+            <li><span class="svc-num">01</span>Khai Huyệt Vùng Mặt</li>
+            <li><span class="svc-num">02</span>Làm Sạch Da, Massage Ấn Huyệt Mặt</li>
+            <li><span class="svc-num">03</span>Gội Sạch 2 Lần, Massage Đầu Thư Giãn</li>
+            <li><span class="svc-num">04</span>Rửa Tai Bọt Tuyết</li>
+            <li><span class="svc-num">05</span>Detox Thải Độc Da Đầu Chuyên Sâu</li>
+            <li><span class="svc-num">06</span>Phun Nano Phục Hồi Nang Tóc</li>
+            <li><span class="svc-num">07</span>Massage Cổ Vai Gáy &amp; Thư Giãn Tay</li>
+            <li><span class="svc-num">08</span>Ủ Tóc Mềm Mượt &amp; Sấy Xịt Dưỡng</li>
+          </ul>
+          <a href="https://zalo.me/0909646153" target="_blank" rel="noopener" class="svc-btn">Đặt Lịch Ngay</a>
+        </div>
+
+        <!-- Card 4 – VIP -->
+        <div class="svc-card svc-vip reveal">
+          <div class="svc-card-img">
+            <img src="images/svc-cami-relax.png" alt="CAMI Relax VIP Combo" loading="lazy">
+          </div>
+          <div class="svc-badge svc-badge-gold">✦ VIP COMBO</div>
+          <div class="svc-card-top">
+            <div class="svc-name-wrap">
+              <h3 class="svc-name">CAMI Relax</h3>
+              <span class="svc-duration">60 phút</span>
+            </div>
+            <div class="svc-price-circle svc-price-gold">239K</div>
+          </div>
+          <p class="svc-desc">Combo chăm sóc da tóc toàn diện kết hợp thư giãn cổ vai gáy cao cấp. Trải nghiệm đỉnh cao tại CAMI.</p>
+          <ul class="svc-steps">
+            <li><span class="svc-num">01</span>Tẩy Da Chết Da Mặt</li>
+            <li><span class="svc-num">02</span>Khai Huyệt, Massage Ấn Huyệt Mặt</li>
+            <li><span class="svc-num">03</span>Gội Sạch 2 Lần, Massage Đầu Thư Giãn</li>
+            <li><span class="svc-num">04</span>Đắp Mặt Nạ Dưỡng Sáng</li>
+            <li><span class="svc-num">05</span>Rửa Tai Bọt Tuyết</li>
+            <li><span class="svc-num">06</span>Detox Thải Độc Da Đầu</li>
+            <li><span class="svc-num">07</span>Phun Nano Phục Hồi Nang Tóc</li>
+            <li><span class="svc-num">08</span>Massage Cổ Vai Gáy &amp; Thư Giãn Tay</li>
+            <li><span class="svc-num">09</span>Ngâm Chân Thảo Mộc</li>
+            <li><span class="svc-num">10</span>Đắp Cao Nóng Ngải Cứu</li>
+            <li><span class="svc-num">11</span>Ủ Tóc Phục Hồi Chuyên Sâu</li>
+            <li><span class="svc-num">12</span>Sấy Tóc Xịt Dưỡng Tinh Dầu</li>
+          </ul>
+          <a href="https://zalo.me/0909646153" target="_blank" rel="noopener" class="svc-btn svc-btn-gold">Đặt Lịch Ngay</a>
+        </div>
+
+      </div><!-- /svc-cards row 2 -->
+    </div><!-- /panel-goi -->
+
+    <!-- ── Panel 2: CHĂM SÓC SỨC KHỎE ── -->
+    <div class="svc-panel" id="panel-health" role="tabpanel" aria-labelledby="tab-health">
+      <div class="svc-group-label">Thư Giãn &amp; Phục Hồi Cơ Thể</div>
+      <div class="svc-cards svc-3col">
+
+        <!-- Health card 1 -->
+        <div class="svc-card reveal">
+          <div class="svc-card-img">
+            <img src="images/dv daucovaigay.png" alt="Thư Giãn Đầu Cổ Vai Gáy tại CAMI" loading="lazy">
+          </div>
+          <h3 class="svc-name" style="text-align:center; margin-bottom:8px;">Thư Giãn Đầu Cổ Vai Gáy</h3>
+          <div class="svc-dual-price">
+            <div class="svc-price-opt">
+              <span class="svc-opt-time">45 phút</span>
+              <span class="svc-opt-price">229K</span>
+            </div>
+            <div class="svc-price-divider"></div>
+            <div class="svc-price-opt">
+              <span class="svc-opt-time">60 phút</span>
+              <span class="svc-opt-price">298K</span>
+            </div>
+          </div>
+          <div class="svc-gift" style="justify-content:center;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+            Tặng đắp thảo dược
+          </div>
+          <ul class="svc-steps" style="margin-top:16px;">
+            <li><span class="svc-num">01</span>Massage Bấm Huyệt Đầu Thư Giãn Sâu</li>
+            <li><span class="svc-num">02</span>Kỹ Thuật Cổ Vai Gáy Giải Phóng Căng Thẳng</li>
+            <li><span class="svc-num">03</span>Đắp Thảo Dược Phục Hồi</li>
+            <li><span class="svc-num">04</span>Xịt Tinh Dầu Thư Giãn</li>
+          </ul>
+          <a href="https://zalo.me/0909646153" target="_blank" rel="noopener" class="svc-btn">Đặt Lịch Ngay</a>
+        </div>
+
+        <!-- Health card 2 -->
+        <div class="svc-card reveal">
+          <div class="svc-card-img">
+            <img src="images/khannong.png" alt="Thư Giãn Thắt Lưng Eo Chân tại CAMI" loading="lazy">
+          </div>
+          <h3 class="svc-name" style="text-align:center; margin-bottom:8px;">Thư Giãn Thắt Lưng Eo Chân</h3>
+          <div class="svc-dual-price">
+            <div class="svc-price-opt">
+              <span class="svc-opt-time">45 phút</span>
+              <span class="svc-opt-price">229K</span>
+            </div>
+            <div class="svc-price-divider"></div>
+            <div class="svc-price-opt">
+              <span class="svc-opt-time">60 phút</span>
+              <span class="svc-opt-price">298K</span>
+            </div>
+          </div>
+          <div class="svc-gift" style="justify-content:center;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 12 20 22 4 22 4 12"/><rect x="2" y="7" width="20" height="5"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+            Tặng đắp thảo dược
+          </div>
+          <ul class="svc-steps" style="margin-top:16px;">
+            <li><span class="svc-num">01</span>Massage Thắt Lưng Giảm Đau Nhức</li>
+            <li><span class="svc-num">02</span>Bấm Huyệt Eo &amp; Hông</li>
+            <li><span class="svc-num">03</span>Thư Giãn Chân Toàn Diện</li>
+            <li><span class="svc-num">04</span>Đắp Thảo Dược Phục Hồi</li>
+          </ul>
+          <a href="https://zalo.me/0909646153" target="_blank" rel="noopener" class="svc-btn">Đặt Lịch Ngay</a>
+        </div>
+
+        <!-- Health card 3 -->
+        <div class="svc-card svc-featured reveal">
+          <div class="svc-card-img">
+            <img src="images/thugiandanong.png" alt="Thư Giãn Đá Nóng Full Body tại CAMI" loading="lazy">
+          </div>
+          <div class="svc-badge">FULL BODY</div>
+          <h3 class="svc-name" style="text-align:center; margin-bottom:8px;">Thư Giãn Đá Nóng Full Body</h3>
+          <div class="svc-dual-price">
+            <div class="svc-price-opt">
+              <span class="svc-opt-time">60 phút</span>
+              <span class="svc-opt-price">298K</span>
+            </div>
+            <div class="svc-price-divider"></div>
+            <div class="svc-price-opt">
+              <span class="svc-opt-time">90 phút</span>
+              <span class="svc-opt-price">398K</span>
+            </div>
+          </div>
+          <ul class="svc-steps" style="margin-top:24px;">
+            <li><span class="svc-num">01</span>Đặt Đá Nóng Dọc Cột Sống &amp; Huyệt Đạo</li>
+            <li><span class="svc-num">02</span>Massage Đầu Thư Giãn Toàn Diện</li>
+            <li><span class="svc-num">03</span>Massage Cổ Vai Gáy Bằng Đá Nóng</li>
+            <li><span class="svc-num">04</span>Thư Giãn Thắt Lưng &amp; Chân</li>
+          </ul>
+          <a href="https://zalo.me/0909646153" target="_blank" rel="noopener" class="svc-btn">Đặt Lịch Ngay</a>
+        </div>
+
+      </div><!-- /svc-3col -->
+    </div><!-- /panel-health -->
+
+    <!-- ── Panel 3: DỊCH VỤ KẾT HỢP ── -->
+    <div class="svc-panel" id="panel-addon" role="tabpanel" aria-labelledby="tab-addon">
+      <div class="svc-group-label">Thêm Vào Bất Kỳ Dịch Vụ Nào</div>
+      <div class="svc-addon-grid">
+
+        <div class="svc-addon-card reveal">
+          <div class="svc-addon-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/></svg>
+          </div>
+          <span class="svc-addon-name">Ngâm Chân Thảo Mộc</span>
+          <span class="svc-addon-price">39K</span>
+        </div>
+
+        <div class="svc-addon-card reveal">
+          <div class="svc-addon-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/></svg>
+          </div>
+          <span class="svc-addon-name">Ngâm Chân Detox</span>
+          <span class="svc-addon-price">88K</span>
+        </div>
+
+        <div class="svc-addon-card reveal">
+          <div class="svc-addon-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 12h.01M12 12h.01M7 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 0 1-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+          </div>
+          <span class="svc-addon-name">Đắp Cao Nóng Ngải Cứu</span>
+          <span class="svc-addon-price">89K</span>
+        </div>
+
+        <div class="svc-addon-card reveal">
+          <div class="svc-addon-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          </div>
+          <span class="svc-addon-name">Giác Hơi</span>
+          <span class="svc-addon-price">50K</span>
+        </div>
+
+        <div class="svc-addon-card reveal">
+          <div class="svc-addon-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2c-2 0-5 2-5 7 0 3 2 5 5 5s5-2 5-5c0-5-3-7-5-7z"/><path d="M7 14c-3 1-5 3-5 6h20c0-3-2-5-5-6"/></svg>
+          </div>
+          <span class="svc-addon-name">Thư Giãn Cổ Vai Gáy</span>
+          <span class="svc-addon-price">79K</span>
+        </div>
+
+        <div class="svc-addon-card reveal">
+          <div class="svc-addon-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="8" width="20" height="14" rx="2"/><path d="M16 8V6a4 4 0 0 0-8 0v2"/></svg>
+          </div>
+          <span class="svc-addon-name">Đắp Mặt Nạ</span>
+          <span class="svc-addon-price">40K</span>
+        </div>
+
+        <div class="svc-addon-card reveal">
+          <div class="svc-addon-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v13H3z"/><path d="M8 21h8m-4-5v5"/></svg>
+          </div>
+          <span class="svc-addon-name">Detox Da Đầu</span>
+          <span class="svc-addon-price">45K</span>
+        </div>
+
+        <div class="svc-addon-card reveal">
+          <div class="svc-addon-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M12 14v8m-4 0h8"/></svg>
+          </div>
+          <span class="svc-addon-name">Tẩy Da Chết Da Mặt</span>
+          <span class="svc-addon-price">40K</span>
+        </div>
+
+        <div class="svc-addon-card reveal">
+          <div class="svc-addon-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <span class="svc-addon-name">Hấp Tóc Phủ Bóng Nano</span>
+          <span class="svc-addon-price">120K</span>
+        </div>
+
+      </div><!-- /svc-addon-grid -->
+
+      <div class="svc-addon-note reveal">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        Các dịch vụ kết hợp có thể thêm vào bất kỳ liệu trình gội đầu nào. Tư vấn qua Zalo để chọn combo phù hợp.
+      </div>
+    </div><!-- /panel-addon -->
+
+    <!-- CTA chung -->
+    <div class="svc-cta reveal">
+      <p>Chưa biết chọn dịch vụ nào? Đội ngũ CAMI sẵn sàng tư vấn miễn phí!</p>
+      <a href="https://zalo.me/0909646153" target="_blank" rel="noopener" class="btn btn-gold">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.63 19.79 19.79 0 01.01 4.5 2 2 0 012 2.18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        Chat Zalo Tư Vấn Ngay
+      </a>
     </div>
 
-    <div class="process-img-wrap reveal">
-      <img src="images/steps-goi.png" alt="Các bước dịch vụ gội đầu tại CAMI" loading="lazy">
-    </div>
-
-    <div class="process-grid" style="margin-top:40px;">
-      <div class="process-step reveal">
-        <div class="process-num">01</div>
-        <h4>Khai Huyệt Vùng Mặt</h4>
-        <p>Kích thích các huyệt đạo vùng mặt, giúp tuần hoàn máu lưu thông trước liệu trình.</p>
-      </div>
-      <div class="process-step reveal">
-        <div class="process-num">02</div>
-        <h4>Làm Sạch & Massage Mặt</h4>
-        <p>Làm sạch sâu da mặt, massage ấn huyệt nhẹ nhàng để thư giãn cơ mặt.</p>
-      </div>
-      <div class="process-step reveal">
-        <div class="process-num">03</div>
-        <h4>Gội Sạch Thảo Mộc</h4>
-        <p>Gội 2 lần bằng dầu gội thảo mộc độc quyền CAMI, kết hợp massage da đầu.</p>
-      </div>
-      <div class="process-step reveal">
-        <div class="process-num">04</div>
-        <h4>Rửa Tai Bọt Tuyết ✦</h4>
-        <p>Dịch vụ độc đáo của CAMI, làm sạch tai nhẹ nhàng bằng bọt tuyết chuyên dụng.</p>
-      </div>
-      <div class="process-step reveal">
-        <div class="process-num">05</div>
-        <h4>Ủ Tóc Mềm Mượt</h4>
-        <p>Ủ tóc với dưỡng chất thiên nhiên, phục hồi độ ẩm và độ bóng cho tóc.</p>
-      </div>
-      <div class="process-step reveal">
-        <div class="process-num">06</div>
-        <h4>Sấy & Xịt Tinh Dầu</h4>
-        <p>Sấy nhẹ nhàng và xịt dưỡng tinh dầu chống rụng, giữ mùi thơm cả ngày dài.</p>
-      </div>
-      <div class="process-step reveal">
-        <div class="process-num">07</div>
-        <h4>Massage Cổ Vai Gáy</h4>
-        <p>Kỹ thuật Shiatsu tác động đúng huyệt đạo, giải phóng căng cứng cơ cổ, vai, gáy.</p>
-      </div>
-      <div class="process-step reveal">
-        <div class="process-num">08</div>
-        <h4>Thư Giãn Tay & Body</h4>
-        <p>Massage tay và các vùng body đi kèm theo gói dịch vụ bạn chọn.</p>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -414,34 +570,187 @@
     </div>
 
     <div class="offers-grid">
+
+      <!-- Card 1: Giờ Vàng -->
       <div class="offer-card reveal">
         <div class="offer-img">
-          <img src="images/promo-weekend.png" alt="Giờ Vàng Ưu Đãi tại CAMI" loading="lazy">
+          <img src="images/giovanguudai.png" alt="Giờ Vàng Ưu Đãi gội đầu massage tại CAMI Quận 4" loading="lazy">
         </div>
         <div class="offer-body">
           <span class="offer-badge">Giờ Vàng</span>
-          <h3>Giảm 7% – 15% Giờ Vàng</h3>
-          <p>Thứ 2 – Thứ 5 (10H–15H): giảm 7% dịch vụ từ 60 phút, giảm 10% gội đầu từ 100K. Khách mới giảm đến 15% combo CAMI Relax.</p>
+          <h3 class="offer-title-shine">Giảm 7% – 15% Giờ Vàng</h3>
+          <ul class="offer-list">
+            <li><b class="ol-label">Ưu đãi</b>
+              <ul>
+                <li>Giảm <strong class="offer-highlight">7%</strong> dịch vụ chăm sóc sức khỏe từ 60 phút</li>
+                <li>Giảm <strong class="offer-highlight">10%</strong> gội đầu dưỡng sinh từ 100K</li>
+                <li><strong class="offer-highlight">Khách mới giảm đến 15%</strong> combo CAMI Relax</li>
+              </ul>
+            </li>
+            <li><b class="ol-label">Thời gian</b>
+              <ul>
+                <li><strong class="offer-highlight">Thứ 2 – Thứ 5 &nbsp;|&nbsp; 10H – 15H</strong></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
+
+      <!-- Card 2: Cuối Tuần -->
       <div class="offer-card reveal">
         <div class="offer-img">
-          <img src="images/promo-couple.png" alt="CAMI Couple ưu đãi cuối tuần" loading="lazy">
+          <img src="images/cami couple.png" alt="CAMI Couple gội đầu cặp đôi ưu đãi cuối tuần Quận 4" loading="lazy">
         </div>
         <div class="offer-body">
           <span class="offer-badge">Cuối Tuần</span>
-          <h3>CAMI Couple – Tha Hồ Thư Giãn</h3>
-          <p>Hóa đơn từ 399K, Thứ 6 – CN: giảm 7% + tặng 2x Ngâm Chân & Voucher ưu đãi. Check-in 5 sao Google Map giảm thêm 3%.</p>
+          <h3 class="offer-title-shine">CAMI Couple – Tha Hồ Thư Giãn</h3>
+          <ul class="offer-list">
+            <li><b class="ol-label">Ưu đãi</b>
+              <ul>
+                <li><strong class="offer-highlight">Hóa đơn từ 399K</strong> – giảm ngay 7%</li>
+                <li>Tặng 2x Ngâm Chân thảo mộc &amp; Voucher ưu đãi</li>
+                <li>Check-in 5 sao Google Map giảm thêm 3%</li>
+              </ul>
+            </li>
+            <li><b class="ol-label">Thời gian</b>
+              <ul>
+                <li><strong class="offer-highlight">Thứ 6 – Chủ Nhật</strong></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
+
+      <!-- Card 3: Combo Hot -->
       <div class="offer-card reveal">
         <div class="offer-img">
-          <img src="images/customer-2.jpg" alt="Gội Detox kết hợp combo tại CAMI" loading="lazy">
+          <img src="images/ngamchandetox.png" alt="Ngâm Chân Detox thảo mộc sạch sâu thư giãn tại CAMI" loading="lazy">
         </div>
         <div class="offer-body">
           <span class="offer-badge">Combo Hot</span>
-          <h3>Gội Detox + Body Care – Giảm 20%</h3>
-          <p>Khi sử dụng combo: Gội Detox Giảm Gàu + Bodycare 60 phút + Ngâm chân Detox 88K. Áp dụng T6 – CN.</p>
+          <h3 class="offer-title-shine">Ngâm Chân Detox<br><span class="offer-title-sub">(Thư giãn, sạch sâu, nhẹ nhàng)</span></h3>
+          <ul class="offer-list">
+            <li><b class="ol-label">Ưu đãi</b>
+              <ul>
+                <li>Giảm đến <strong class="offer-highlight">20%</strong> khi sử dụng combo</li>
+              </ul>
+            </li>
+            <li><b class="ol-label">Thời gian</b>
+              <ul>
+                <li><strong class="offer-highlight">Thứ 6 – Chủ Nhật</strong></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== TUYEN DUNG ===== -->
+<section class="recruit section" id="tuyen-dung">
+  <div class="wrap">
+    <div class="sec-head recruit-reveal" style="--rr-delay:0s;">
+      <span class="eyebrow">Tuyển Dụng</span>
+      <div class="orn"><span></span><i>✦</i><span></span></div>
+      <h2>Gia Nhập Đội CAMI – Thu Nhập 9–12 Triệu</h2>
+      <p>Bạn yêu nghề, muốn làm nơi <strong>khách đều quanh năm</strong>, đồng nghiệp thân thiện và <strong>thu nhập thực tế</strong>? CAMI đang chờ bạn!</p>
+    </div>
+
+    <div class="recruit-layout">
+      <!-- Hình ảnh -->
+      <div class="recruit-visual recruit-reveal" style="--rr-delay:0.18s;">
+        <div class="recruit-poster-wrap">
+          <img src="images/recruit-poster.png" alt="CAMI tuyển dụng thợ gội đầu – Thu nhập 9 đến 12 triệu tháng – Quận 4 TPHCM" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Thông tin tuyển dụng -->
+      <div class="recruit-info recruit-reveal" style="--rr-delay:0.36s;">
+        <div class="recruit-hook">
+          <p class="recruit-lead">Tiệm khách đều – Môi trường ấm áp – Làm lâu dài cực hợp!</p>
+        </div>
+
+        <div class="recruit-details-grid">
+          <div class="rdt-card">
+            <div class="rdt-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <div>
+              <h4>Vị Trí Tuyển</h4>
+              <p>Thợ Gội Đầu – Độ tuổi 20 đến 32 tuổi</p>
+            </div>
+          </div>
+          <div class="rdt-card">
+            <div class="rdt-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div>
+              <h4>Hoa Hồng</h4>
+              <p>Gội 30–35% | Body 40–45% bill</p>
+            </div>
+          </div>
+          <div class="rdt-card">
+            <div class="rdt-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <div>
+              <h4>Ngày Nghỉ</h4>
+              <p>4 ngày mỗi tháng (linh hoạt sắp xếp)</p>
+            </div>
+          </div>
+          <div class="rdt-card">
+            <div class="rdt-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <h4>Phụ Cấp</h4>
+              <p>Chuyên cần 1 triệu mỗi tháng</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="recruit-fit">
+          <h3 class="recruit-fit-title">CAMI Hợp Với Bạn Nếu:</h3>
+          <ul class="recruit-fit-list">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+              Trung thực, hòa đồng, vui vẻ với chị em
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+              Yêu nghề và sẵn sàng hỗ trợ đồng đội
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+              Đã từng đi làm – tuổi 22 trở lên là điểm cộng
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+              Biết body thư giãn hoặc nail là lợi thế lớn
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="20 6 9 17 4 12"/></svg>
+              Chưa biết nghề – CAMI đào tạo, vào làm là có thu nhập ngay
+            </li>
+          </ul>
+        </div>
+
+        <div class="recruit-address">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>CAMI – 153 Tôn Đản, Quận 4, TP.HCM</span>
+        </div>
+
+        <div class="recruit-cta-wrap">
+          <a href="tel:0703301158" class="btn btn-gold recruit-cta-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Gọi: 070.330.1158
+          </a>
+          <a href="https://zalo.me/0933390937" target="_blank" rel="noopener" class="btn btn-outline-green recruit-cta-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            Inbox Zalo Ngay
+          </a>
         </div>
       </div>
     </div>
@@ -459,41 +768,44 @@
     </div>
 
     <div class="gallery-grid">
-      <div class="gallery-item reveal">
-        <img src="images/interior-5.jpg" alt="Nội thất CAMI sang trọng" loading="lazy">
-        <div class="gallery-item-overlay">
-          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-        </div>
+      <!-- Main hero image: khonggian5 spans 2×2 -->
+      <div class="gallery-item gallery-main">
+        <img src="images/khonggian5.jpg" alt="Không gian sang trọng CAMI Quận 4" loading="lazy">
+        <div class="gallery-item-overlay"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
       </div>
-      <div class="gallery-item reveal">
-        <img src="images/interior-3.jpg" alt="Giường massage thế hệ mới CAMI" loading="lazy">
-        <div class="gallery-item-overlay">
-          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-        </div>
+      <!-- Top-right 4 images -->
+      <div class="gallery-item">
+        <img src="images/khonggian1.jpg" alt="Nội thất CAMI trang trí tinh tế" loading="lazy">
+        <div class="gallery-item-overlay"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
       </div>
-      <div class="gallery-item reveal">
-        <img src="images/interior-4.jpg" alt="Không gian thư giãn CAMI" loading="lazy">
-        <div class="gallery-item-overlay">
-          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-        </div>
+      <div class="gallery-item">
+        <img src="images/khonggian2.jpg" alt="Khu vực gội đầu thư giãn CAMI" loading="lazy">
+        <div class="gallery-item-overlay"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
       </div>
-      <div class="gallery-item reveal">
-        <img src="images/exterior-1.jpg" alt="Mặt tiền tiệm CAMI Quận 4" loading="lazy">
-        <div class="gallery-item-overlay">
-          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-        </div>
+      <div class="gallery-item">
+        <img src="images/khonggian3.jpg" alt="Góc thư giãn đặc biệt tại CAMI" loading="lazy">
+        <div class="gallery-item-overlay"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
       </div>
-      <div class="gallery-item reveal">
-        <img src="images/exterior-2.jpg" alt="Tiệm CAMI 153 Tôn Đản" loading="lazy">
-        <div class="gallery-item-overlay">
-          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-        </div>
+      <div class="gallery-item">
+        <img src="images/khonggian4.jpg" alt="Ánh sáng ấm áp không gian CAMI" loading="lazy">
+        <div class="gallery-item-overlay"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
       </div>
-      <div class="gallery-item reveal">
-        <img src="images/grand-open.jpg" alt="Khai trương CAMI Quận 4" loading="lazy">
-        <div class="gallery-item-overlay">
-          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-        </div>
+      <!-- Bottom row: 4 images -->
+      <div class="gallery-item">
+        <img src="images/khonggian6.png" alt="Mặt tiền CAMI 153 Tôn Đản Quận 4" loading="lazy">
+        <div class="gallery-item-overlay"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/khonggian7.jpg" alt="Đường phố trước CAMI Quận 4" loading="lazy">
+        <div class="gallery-item-overlay"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/khonggian8.jpg" alt="Biển hiệu CAMI gội đầu thế hệ mới" loading="lazy">
+        <div class="gallery-item-overlay"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/khonggian9.jpg" alt="Đội ngũ CAMI chuyên nghiệp thân thiện" loading="lazy">
+        <div class="gallery-item-overlay"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div>
       </div>
     </div>
   </div>
@@ -515,34 +827,34 @@
           <div class="testimonial-cards">
             <div class="testimonial-card">
               <div class="t-stars">★★★★★</div>
-              <p class="t-text">"Lần đầu đến CAMI mà bị nghiện luôn! Giường massage đa điểm chạm kết hợp gội đầu – cảm giác như cả cơ thể được giải phóng. Cổ vai gáy mình hay bị đau mà sau buổi này nhẹ hẳn!"</p>
+              <p class="t-text">"Đây là lần thứ 2 mình quay lại Tiệm với dịch vụ Thư giãn đá nóng. Với riêng bản thân mình, đã đỡ mỏi vai và thắt lưng hơn rất nhiều. Nếu có dịp ghé qua, các bạn hãy ghé và trải nghiệm dịch vụ nè 🥰"</p>
               <div class="t-author">
-                <div class="t-avatar"><img src="images/customer-1.jpg" alt="Khách hàng CAMI" loading="lazy"></div>
+                <div class="t-avatar t-avatar-initial" style="--t-initial-bg:#0E2B22;">MP</div>
                 <div>
-                  <div class="t-name">Minh Thy</div>
-                  <div class="t-label">Nhân viên văn phòng · Quận 1</div>
+                  <div class="t-name">MAI PHO</div>
+                  <div class="t-label">Đánh giá Google ✦ 5 sao</div>
                 </div>
               </div>
             </div>
             <div class="testimonial-card">
               <div class="t-stars">★★★★★</div>
-              <p class="t-text">"Đã thử nhiều tiệm gội đầu ở Quận 4 nhưng CAMI khác hẳn. Kỹ thuật viên chuyên nghiệp, không gian sạch sẽ sang trọng. Dịch vụ Rửa Tai Bọt Tuyết rất thú vị và hiệu quả!"</p>
+              <p class="t-text">"Vô tình chạy ngang nên quẹo vô mà ưng hơn mong đợi nữa. Chị tưởng ch tháo cái vai thay mới rồi, hên sao gặp con Bé Cầm làm mát tay nên khoẻ hẳn nha. Cho mấy đứa 10đ về tay nghề với nhiệt tình ha"</p>
               <div class="t-author">
-                <div class="t-avatar"><img src="images/customer-2.jpg" alt="Khách hàng CAMI" loading="lazy"></div>
+                <div class="t-avatar t-avatar-initial" style="--t-initial-bg:#12362B;">PJ</div>
                 <div>
-                  <div class="t-name">Hương Lan</div>
-                  <div class="t-label">Giáo viên · Quận 4</div>
+                  <div class="t-name">Peen Jk</div>
+                  <div class="t-label">Đánh giá Google ✦ 5 sao</div>
                 </div>
               </div>
             </div>
             <div class="testimonial-card">
               <div class="t-stars">★★★★★</div>
-              <p class="t-text">"Đặt lịch qua Zalo rất tiện, nhân viên tư vấn nhiệt tình. Combo CAMI Relax VIP xứng đáng từng đồng, gội đầu + body care trong một buổi, thư giãn hoàn toàn sau giờ làm căng thẳng."</p>
+              <p class="t-text">"Mình nam nhưng qua đây làm cổ vai gáy thấy ok lắm nha, mấy bạn ở đây tay nghề ok lắm, nên thử"</p>
               <div class="t-author">
-                <div class="t-avatar"><img src="images/customer-3.jpg" alt="Khách hàng CAMI" loading="lazy"></div>
+                <div class="t-avatar t-avatar-initial" style="--t-initial-bg:#1B4638;">PQT</div>
                 <div>
-                  <div class="t-name">Thanh Bình</div>
-                  <div class="t-label">Kỹ sư IT · Quận 7</div>
+                  <div class="t-name">Phạm Qúy Tài</div>
+                  <div class="t-label">Đánh giá Google ✦ 5 sao</div>
                 </div>
               </div>
             </div>
@@ -552,34 +864,34 @@
           <div class="testimonial-cards">
             <div class="testimonial-card">
               <div class="t-stars">★★★★★</div>
-              <p class="t-text">"Mình đến CAMI mỗi tuần vì bị đau đầu mãn tính. Sau 3 buổi Gội Detox thì tình trạng cải thiện rõ rệt. Da đầu sạch, tóc bóng hơn, và quan trọng là ngủ ngon hơn nhiều!"</p>
+              <p class="t-text">"Đang đau vai. Vào nằm 1 tiếng là phê chứ ê kéo dài luôn. Ổn áp nằm nay mặt tiền không gian ấm cúng."</p>
               <div class="t-author">
-                <div class="t-avatar"><img src="images/interior-1.jpg" alt="Khách hàng CAMI" loading="lazy"></div>
+                <div class="t-avatar t-avatar-initial" style="--t-initial-bg:#0E2B22;">VH</div>
                 <div>
-                  <div class="t-name">Anh Tuấn</div>
-                  <div class="t-label">Doanh nhân · Quận 5</div>
+                  <div class="t-name">VÕ HUỲNH VÂN ANH</div>
+                  <div class="t-label">Đánh giá Google ✦ 5 sao</div>
                 </div>
               </div>
             </div>
             <div class="testimonial-card">
               <div class="t-stars">★★★★★</div>
-              <p class="t-text">"Bạn bè giới thiệu CAMI và mình đã dẫn cả gia đình đến! Không gian thoải mái, giá cả hợp lý. Đặc biệt là chương trình Couple cuối tuần – cả hai vợ chồng cùng thư giãn rất tuyệt!"</p>
+              <p class="t-text">"Tiệm nhỏ nhưng gọn gàng sạch sẽ. KTV nhiệt tình, tư vấn rõ ràng, tay nghề tốt. Có nhiều gói gội phù hợp cho các loại nhu cầu. Nhiều CTKM cho khách hàng lần đầu sử dụng dịch vụ."</p>
               <div class="t-author">
-                <div class="t-avatar"><img src="images/interior-2.jpg" alt="Khách hàng CAMI" loading="lazy"></div>
+                <div class="t-avatar t-avatar-initial" style="--t-initial-bg:#12362B;">NB</div>
                 <div>
-                  <div class="t-name">Vân Anh</div>
-                  <div class="t-label">Nội trợ · Quận 4</div>
+                  <div class="t-name">Nguyệt Bích</div>
+                  <div class="t-label">Đánh giá Google ✦ 5 sao</div>
                 </div>
               </div>
             </div>
             <div class="testimonial-card">
               <div class="t-stars">★★★★★</div>
-              <p class="t-text">"Mình thường xuyên stress vì công việc. CAMI là nơi mình tìm đến để reset. Kỹ thuật Shiatsu chuyên sâu giúp mình thư giãn sâu thực sự, không chỉ là gội đầu thông thường."</p>
+              <p class="t-text">"Gần nhà mà chưa ghé lần nào, nhân dịp vai gáy căng mỏi mình ghé trải nghiệm thử. Các bạn rất dễ thương, xếp lịch nhanh gọn, massage cho mình cũng rất dễ chịu. Lần sau sẽ dẫn chồng qua trải nghiệm thêm dịch vụ khác"</p>
               <div class="t-author">
-                <div class="t-avatar"><img src="images/interior-3.jpg" alt="Khách hàng CAMI" loading="lazy"></div>
+                <div class="t-avatar t-avatar-initial" style="--t-initial-bg:#1B4638;">JN</div>
                 <div>
-                  <div class="t-name">Phúc Khang</div>
-                  <div class="t-label">Bác sĩ · Quận 3</div>
+                  <div class="t-name">Jessie Ngo</div>
+                  <div class="t-label">Đánh giá Google ✦ 5 sao</div>
                 </div>
               </div>
             </div>

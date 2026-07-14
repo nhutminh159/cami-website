@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://goidaucami.com/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://goidaucami.com/images/logo.png</image:loc>
+      <image:title>CAMI – Gội Đầu Thế Hệ Mới Quận 4</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://goidaucami.com/blog/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://goidaucami.com/blog/goi-dau-duong-sinh-la-gi.html</loc>
+    <lastmod>2026-07-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://goidaucami.com/images/service-shiatsu.png</image:loc>
+      <image:title>Gội đầu dưỡng sinh tại CAMI Quận 4</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://goidaucami.com/blog/massage-co-vai-gay-quan-4.html</loc>
+    <lastmod>2026-07-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://goidaucami.com/images/service-body-1.png</image:loc>
+      <image:title>Massage cổ vai gáy Quận 4</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://goidaucami.com/blog/head-spa-tphcm.html</loc>
+    <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://goidaucami.com/images/svc-detox-new.png</image:loc>
+      <image:title>Head Spa TPHCM tại CAMI</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://goidaucami.com/blog/dau-hieu-dau-co-vai-gay.html</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://goidaucami.com/images/service-body-3.png</image:loc>
+      <image:title>5 dấu hiệu cổ vai gáy kêu cứu</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://goidaucami.com/blog/goi-dau-bao-lau-thi-tot.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://goidaucami.com/images/goisachthom.png</image:loc>
+      <image:title>Gội đầu bao lâu thì tốt</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://goidaucami.com/blog/ngam-chan-thao-moc.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://goidaucami.com/images/ngamchandetox.png</image:loc>
+      <image:title>Ngâm chân thảo mộc tại CAMI</image:title>
+    </image:image>
+  </url>
+</urlset>
