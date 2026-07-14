@@ -66,7 +66,7 @@ const revealObs = new IntersectionObserver((entries) => {
       revealObs.unobserve(e.target);
     }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.12, rootMargin: '0px 0px 200px 0px' });
 reveals.forEach(el => revealObs.observe(el));
 
 // Testimonials slider
@@ -119,7 +119,7 @@ const aboutObs = new IntersectionObserver((entries) => {
       aboutObs.unobserve(e.target);
     }
   });
-}, { threshold: 0.15 });
+}, { threshold: 0.15, rootMargin: '0px 0px 200px 0px' });
 document.querySelector('.about-content') && aboutObs.observe(document.querySelector('.about-content'));
 
 // About slider — fade + Ken Burns (giống hero)
@@ -212,7 +212,7 @@ document.querySelector('.about-content') && aboutObs.observe(document.querySelec
         galleryObs.disconnect();
       }
     });
-  }, { threshold: 0.08 });
+  }, { threshold: 0.08, rootMargin: '0px 0px 200px 0px' });
   galleryObs.observe(galleryGrid);
 
   // Hover: Focus & Subtle Zoom
@@ -240,7 +240,7 @@ document.querySelector('.about-content') && aboutObs.observe(document.querySelec
         obs.disconnect();
       }
     });
-  }, { threshold: 0.08 });
+  }, { threshold: 0.08, rootMargin: '0px 0px 200px 0px' });
   obs.observe(recruitSection);
 })();
 
