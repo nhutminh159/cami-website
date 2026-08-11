@@ -1,0 +1,1572 @@
+{
+  "site": "goidaucami.com",
+  "score": 100,
+  "pages_audited": 8,
+  "summary": {
+    "fail": 0,
+    "warn": 1,
+    "pass": 132,
+    "info": 24
+  },
+  "site_findings": [
+    {
+      "check": "pages_fetched",
+      "status": "pass",
+      "message": "All 8 pages fetched",
+      "detail": null
+    },
+    {
+      "check": "duplicate_titles",
+      "status": "pass",
+      "message": "Every page has a distinct title",
+      "detail": null
+    },
+    {
+      "check": "duplicate_descriptions",
+      "status": "pass",
+      "message": "Every page has a distinct meta description",
+      "detail": null
+    },
+    {
+      "check": "canonical_targets",
+      "status": "pass",
+      "message": "Every canonical points at its own page",
+      "detail": null
+    },
+    {
+      "check": "sitemap_coverage",
+      "status": "pass",
+      "message": "Every linked page is in the sitemap",
+      "detail": null
+    }
+  ],
+  "pages": [
+    {
+      "key": "home",
+      "url": "https://goidaucami.com/",
+      "ok": true,
+      "score": 99,
+      "summary": {
+        "fail": 0,
+        "warn": 1,
+        "pass": 15,
+        "info": 3
+      },
+      "findings": [
+        {
+          "check": "https",
+          "status": "pass",
+          "message": "Served over HTTPS",
+          "detail": null
+        },
+        {
+          "check": "status_code",
+          "status": "pass",
+          "message": "HTTP 200",
+          "detail": {
+            "final_url": "https://goidaucami.com/",
+            "redirected": false
+          }
+        },
+        {
+          "check": "title",
+          "status": "pass",
+          "message": "Title is 48 chars",
+          "detail": {
+            "title": "Gội Đầu Thư Giãn Quận 4 – Head Spa CAMI | Từ 89K"
+          }
+        },
+        {
+          "check": "meta_description",
+          "status": "pass",
+          "message": "Meta description is 140 chars",
+          "detail": {
+            "description": "CAMI – Gội đầu dưỡng sinh, head spa, massage cổ vai gáy tại 153 Tôn Đản, Quận 4. Giường massage đa điểm chạm, giá từ 89K. Đặt lịch qua Zalo."
+          }
+        },
+        {
+          "check": "canonical",
+          "status": "pass",
+          "message": "Canonical URL declared",
+          "detail": {
+            "canonical": "https://goidaucami.com/"
+          }
+        },
+        {
+          "check": "indexable",
+          "status": "pass",
+          "message": "Indexable (no robots noindex)",
+          "detail": null
+        },
+        {
+          "check": "mixed_content",
+          "status": "pass",
+          "message": "No mixed (http) content",
+          "detail": null
+        },
+        {
+          "check": "h1",
+          "status": "pass",
+          "message": "Exactly one <h1>",
+          "detail": {
+            "text": "Gội Đầu Thế Hệ Mới Chạm Đến Từng Điểm Thư Giãn"
+          }
+        },
+        {
+          "check": "heading_order",
+          "status": "pass",
+          "message": "Heading hierarchy is sequential",
+          "detail": null
+        },
+        {
+          "check": "img_alt",
+          "status": "pass",
+          "message": "All 28 images have alt text",
+          "detail": null
+        },
+        {
+          "check": "img_dimensions",
+          "status": "warn",
+          "message": "1/28 images missing width/height (layout-shift risk)",
+          "detail": {
+            "examples": [
+              "?"
+            ]
+          }
+        },
+        {
+          "check": "img_format",
+          "status": "info",
+          "message": "26 image(s) in legacy formats — WebP/AVIF are smaller",
+          "detail": {
+            "examples": [
+              "images/logo.png",
+              "images/about-main.jpg",
+              "images/about-interior.jpg",
+              "images/svc-goi-sach.png",
+              "images/svc-shiatsu.png"
+            ]
+          }
+        },
+        {
+          "check": "viewport",
+          "status": "pass",
+          "message": "Viewport meta present",
+          "detail": null
+        },
+        {
+          "check": "lang",
+          "status": "pass",
+          "message": "lang=\"vi\"",
+          "detail": null
+        },
+        {
+          "check": "open_graph",
+          "status": "pass",
+          "message": "Open Graph title+description set",
+          "detail": {
+            "og": {
+              "og:type": "website",
+              "og:url": "https://goidaucami.com/",
+              "og:site_name": "CAMI – Gội Đầu Thế Hệ Mới",
+              "og:locale": "vi_VN",
+              "og:title": "CAMI – Gội Đầu Thế Hệ Mới · Head Spa Dưỡng Sinh Quận 4",
+              "og:description": "Gội đầu dưỡng sinh trên giường massage đa điểm chạm, 153 Tôn Đản, Quận 4. Mở cửa 10:00–21:00. Đặt lịch Zalo 0909 646 153.",
+              "og:image": "https://goidaucami.com/images/hero-1.png"
+            }
+          }
+        },
+        {
+          "check": "twitter_card",
+          "status": "info",
+          "message": "No twitter:card tag",
+          "detail": null
+        },
+        {
+          "check": "structured_data",
+          "status": "pass",
+          "message": "Schema.org types: HairSalon, FAQPage",
+          "detail": {
+            "types": [
+              "HairSalon",
+              "FAQPage"
+            ]
+          }
+        },
+        {
+          "check": "word_count",
+          "status": "pass",
+          "message": "~2099 words of body text",
+          "detail": {
+            "words": 2099
+          }
+        },
+        {
+          "check": "links",
+          "status": "info",
+          "message": "11 internal, 18 external links",
+          "detail": {
+            "internal": 11,
+            "external": 18
+          }
+        }
+      ],
+      "links": [
+        "https://goidaucami.com/blog/goi-dau-duong-sinh-la-gi.html",
+        "https://goidaucami.com/blog/goi-dau-duong-sinh-la-gi.html",
+        "https://goidaucami.com/blog/goi-dau-duong-sinh-la-gi.html",
+        "https://goidaucami.com/blog/massage-co-vai-gay-quan-4.html",
+        "https://goidaucami.com/blog/massage-co-vai-gay-quan-4.html",
+        "https://goidaucami.com/blog/massage-co-vai-gay-quan-4.html",
+        "https://goidaucami.com/blog/head-spa-tphcm.html",
+        "https://goidaucami.com/blog/head-spa-tphcm.html",
+        "https://goidaucami.com/blog/head-spa-tphcm.html",
+        "https://goidaucami.com/blog/",
+        "https://goidaucami.com/blog/",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0933390937",
+        "https://zalo.me/0909646153",
+        "https://www.facebook.com/goidaucami/",
+        "https://www.tiktok.com/@camigoidau",
+        "https://zalo.me/0909646153",
+        "https://maps.app.goo.gl/SiyF2GWwmpTYqaA67",
+        "https://zalo.me/0909646153"
+      ]
+    },
+    {
+      "key": "blogindex",
+      "url": "https://goidaucami.com/blog/",
+      "ok": true,
+      "score": 100,
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "pass": 16,
+        "info": 3
+      },
+      "findings": [
+        {
+          "check": "https",
+          "status": "pass",
+          "message": "Served over HTTPS",
+          "detail": null
+        },
+        {
+          "check": "status_code",
+          "status": "pass",
+          "message": "HTTP 200",
+          "detail": {
+            "final_url": "https://goidaucami.com/blog/",
+            "redirected": false
+          }
+        },
+        {
+          "check": "title",
+          "status": "pass",
+          "message": "Title is 56 chars",
+          "detail": {
+            "title": "Blog Chăm Sóc Tóc & Sức Khỏe | CAMI – Gội Đầu Thế Hệ Mới"
+          }
+        },
+        {
+          "check": "meta_description",
+          "status": "pass",
+          "message": "Meta description is 125 chars",
+          "detail": {
+            "description": "Kiến thức về gội đầu dưỡng sinh, head spa, massage cổ vai gáy và chăm sóc sức khỏe từ đội ngũ CAMI Quận 4. Cập nhật mỗi tuần."
+          }
+        },
+        {
+          "check": "canonical",
+          "status": "pass",
+          "message": "Canonical URL declared",
+          "detail": {
+            "canonical": "https://goidaucami.com/blog/"
+          }
+        },
+        {
+          "check": "indexable",
+          "status": "pass",
+          "message": "Indexable (no robots noindex)",
+          "detail": null
+        },
+        {
+          "check": "mixed_content",
+          "status": "pass",
+          "message": "No mixed (http) content",
+          "detail": null
+        },
+        {
+          "check": "h1",
+          "status": "pass",
+          "message": "Exactly one <h1>",
+          "detail": {
+            "text": "Kiến Thức Chăm Sóc Tóc & Sức Khỏe"
+          }
+        },
+        {
+          "check": "heading_order",
+          "status": "pass",
+          "message": "Heading hierarchy is sequential",
+          "detail": null
+        },
+        {
+          "check": "img_alt",
+          "status": "pass",
+          "message": "All 8 images have alt text",
+          "detail": null
+        },
+        {
+          "check": "img_dimensions",
+          "status": "pass",
+          "message": "Every image sets width and height",
+          "detail": null
+        },
+        {
+          "check": "img_format",
+          "status": "info",
+          "message": "7 image(s) in legacy formats — WebP/AVIF are smaller",
+          "detail": {
+            "examples": [
+              "../images/logo.png",
+              "../images/service-shiatsu.png",
+              "../images/service-body-1.png",
+              "../images/service-detox.png",
+              "../images/service-body-3.png"
+            ]
+          }
+        },
+        {
+          "check": "viewport",
+          "status": "pass",
+          "message": "Viewport meta present",
+          "detail": null
+        },
+        {
+          "check": "lang",
+          "status": "pass",
+          "message": "lang=\"vi\"",
+          "detail": null
+        },
+        {
+          "check": "open_graph",
+          "status": "pass",
+          "message": "Open Graph title+description set",
+          "detail": {
+            "og": {
+              "og:type": "website",
+              "og:title": "Blog Chăm Sóc Tóc & Sức Khỏe | CAMI",
+              "og:description": "Kiến thức về gội đầu dưỡng sinh, head spa, massage cổ vai gáy và chăm sóc sức khỏe từ đội ngũ CAMI Quận 4.",
+              "og:image": "https://goidaucami.com/images/logo.png",
+              "og:url": "https://goidaucami.com/blog/"
+            }
+          }
+        },
+        {
+          "check": "twitter_card",
+          "status": "pass",
+          "message": "twitter:card set",
+          "detail": null
+        },
+        {
+          "check": "structured_data",
+          "status": "info",
+          "message": "No JSON-LD structured data",
+          "detail": {
+            "types": []
+          }
+        },
+        {
+          "check": "word_count",
+          "status": "pass",
+          "message": "~486 words of body text",
+          "detail": {
+            "words": 486
+          }
+        },
+        {
+          "check": "links",
+          "status": "info",
+          "message": "36 internal, 5 external links",
+          "detail": {
+            "internal": 36,
+            "external": 5
+          }
+        }
+      ],
+      "links": [
+        "https://goidaucami.com/",
+        "https://goidaucami.com/#about",
+        "https://goidaucami.com/#services",
+        "https://goidaucami.com/#offers",
+        "https://goidaucami.com/#gallery",
+        "https://goidaucami.com/",
+        "https://goidaucami.com/",
+        "https://goidaucami.com/#services",
+        "https://goidaucami.com/#offers",
+        "https://goidaucami.com/blog/",
+        "https://goidaucami.com/blog/goi-dau-duong-sinh-la-gi.html",
+        "https://goidaucami.com/blog/goi-dau-duong-sinh-la-gi.html",
+        "https://goidaucami.com/blog/goi-dau-duong-sinh-la-gi.html",
+        "https://goidaucami.com/blog/massage-co-vai-gay-quan-4.html",
+        "https://goidaucami.com/blog/massage-co-vai-gay-quan-4.html",
+        "https://goidaucami.com/blog/massage-co-vai-gay-quan-4.html",
+        "https://goidaucami.com/blog/head-spa-tphcm.html",
+        "https://goidaucami.com/blog/head-spa-tphcm.html",
+        "https://goidaucami.com/blog/head-spa-tphcm.html",
+        "https://goidaucami.com/blog/dau-hieu-dau-co-vai-gay.html",
+        "https://goidaucami.com/blog/dau-hieu-dau-co-vai-gay.html",
+        "https://goidaucami.com/blog/dau-hieu-dau-co-vai-gay.html",
+        "https://goidaucami.com/blog/goi-dau-bao-lau-thi-tot.html",
+        "https://goidaucami.com/blog/goi-dau-bao-lau-thi-tot.html",
+        "https://goidaucami.com/blog/goi-dau-bao-lau-thi-tot.html",
+        "https://goidaucami.com/blog/ngam-chan-thao-moc.html",
+        "https://goidaucami.com/blog/ngam-chan-thao-moc.html",
+        "https://goidaucami.com/blog/ngam-chan-thao-moc.html",
+        "https://goidaucami.com/blog/goi-dau-duong-sinh-la-gi.html",
+        "https://goidaucami.com/blog/massage-co-vai-gay-quan-4.html",
+        "https://goidaucami.com/blog/head-spa-tphcm.html",
+        "https://goidaucami.com/blog/dau-hieu-dau-co-vai-gay.html",
+        "https://goidaucami.com/blog/goi-dau-bao-lau-thi-tot.html",
+        "https://goidaucami.com/",
+        "https://goidaucami.com/#services",
+        "https://goidaucami.com/blog/",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153"
+      ]
+    },
+    {
+      "key": "p1",
+      "url": "https://goidaucami.com/blog/goi-dau-duong-sinh-la-gi.html",
+      "ok": true,
+      "score": 100,
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "pass": 16,
+        "info": 3
+      },
+      "findings": [
+        {
+          "check": "https",
+          "status": "pass",
+          "message": "Served over HTTPS",
+          "detail": null
+        },
+        {
+          "check": "status_code",
+          "status": "pass",
+          "message": "HTTP 200",
+          "detail": {
+            "final_url": "https://goidaucami.com/blog/goi-dau-duong-sinh-la-gi.html",
+            "redirected": false
+          }
+        },
+        {
+          "check": "title",
+          "status": "pass",
+          "message": "Title is 52 chars",
+          "detail": {
+            "title": "Gội Đầu Dưỡng Sinh Là Gì? Lợi Ích & Quy Trình | CAMI"
+          }
+        },
+        {
+          "check": "meta_description",
+          "status": "pass",
+          "message": "Meta description is 149 chars",
+          "detail": {
+            "description": "Gội đầu dưỡng sinh là gì? Tìm hiểu lợi ích, quy trình và cách phân biệt với gội đầu thông thường. Trải nghiệm tại CAMI – 153 Tôn Đản, Quận 4, TP.HCM."
+          }
+        },
+        {
+          "check": "canonical",
+          "status": "pass",
+          "message": "Canonical URL declared",
+          "detail": {
+            "canonical": "https://goidaucami.com/blog/goi-dau-duong-sinh-la-gi.html"
+          }
+        },
+        {
+          "check": "indexable",
+          "status": "pass",
+          "message": "Indexable (no robots noindex)",
+          "detail": null
+        },
+        {
+          "check": "mixed_content",
+          "status": "pass",
+          "message": "No mixed (http) content",
+          "detail": null
+        },
+        {
+          "check": "h1",
+          "status": "pass",
+          "message": "Exactly one <h1>",
+          "detail": {
+            "text": "Gội Đầu Dưỡng Sinh Là Gì? Lợi Ích Và Quy Trình Chuẩn Nhất"
+          }
+        },
+        {
+          "check": "heading_order",
+          "status": "pass",
+          "message": "Heading hierarchy is sequential",
+          "detail": null
+        },
+        {
+          "check": "img_alt",
+          "status": "pass",
+          "message": "All 7 images have alt text",
+          "detail": null
+        },
+        {
+          "check": "img_dimensions",
+          "status": "pass",
+          "message": "Every image sets width and height",
+          "detail": null
+        },
+        {
+          "check": "img_format",
+          "status": "info",
+          "message": "6 image(s) in legacy formats — WebP/AVIF are smaller",
+          "detail": {
+            "examples": [
+              "../images/logo.png",
+              "../images/service-shiatsu.png",
+              "../images/steps-goi.png",
+              "../images/service-body-1.png",
+              "../images/service-detox.png"
+            ]
+          }
+        },
+        {
+          "check": "viewport",
+          "status": "pass",
+          "message": "Viewport meta present",
+          "detail": null
+        },
+        {
+          "check": "lang",
+          "status": "pass",
+          "message": "lang=\"vi\"",
+          "detail": null
+        },
+        {
+          "check": "open_graph",
+          "status": "pass",
+          "message": "Open Graph title+description set",
+          "detail": {
+            "og": {
+              "og:title": "Gội Đầu Dưỡng Sinh Là Gì? Lợi Ích & Quy Trình Chuẩn",
+              "og:description": "Gội đầu dưỡng sinh không chỉ làm sạch tóc, đây là liệu trình kích thích huyệt đạo, cải thiện tuần hoàn máu não và phục hồi da đầu toàn diện.",
+              "og:image": "https://goidaucami.com/images/service-shiatsu.png",
+              "og:type": "article"
+            }
+          }
+        },
+        {
+          "check": "twitter_card",
+          "status": "info",
+          "message": "No twitter:card tag",
+          "detail": null
+        },
+        {
+          "check": "structured_data",
+          "status": "pass",
+          "message": "Schema.org types: Article, BreadcrumbList, FAQPage",
+          "detail": {
+            "types": [
+              "Article",
+              "BreadcrumbList",
+              "FAQPage"
+            ]
+          }
+        },
+        {
+          "check": "word_count",
+          "status": "pass",
+          "message": "~1227 words of body text",
+          "detail": {
+            "words": 1227
+          }
+        },
+        {
+          "check": "links",
+          "status": "info",
+          "message": "14 internal, 6 external links",
+          "detail": {
+            "internal": 14,
+            "external": 6
+          }
+        }
+      ],
+      "links": [
+        "https://goidaucami.com/",
+        "https://goidaucami.com/#services",
+        "https://goidaucami.com/#offers",
+        "https://goidaucami.com/blog/",
+        "https://goidaucami.com/",
+        "https://goidaucami.com/#services",
+        "https://goidaucami.com/blog/",
+        "https://goidaucami.com/",
+        "https://goidaucami.com/blog/",
+        "https://goidaucami.com/blog/massage-co-vai-gay-quan-4.html",
+        "https://goidaucami.com/blog/head-spa-tphcm.html",
+        "https://goidaucami.com/blog/ngam-chan-thao-moc.html",
+        "https://goidaucami.com/",
+        "https://goidaucami.com/blog/",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153"
+      ]
+    },
+    {
+      "key": "p2",
+      "url": "https://goidaucami.com/blog/massage-co-vai-gay-quan-4.html",
+      "ok": true,
+      "score": 100,
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "pass": 16,
+        "info": 3
+      },
+      "findings": [
+        {
+          "check": "https",
+          "status": "pass",
+          "message": "Served over HTTPS",
+          "detail": null
+        },
+        {
+          "check": "status_code",
+          "status": "pass",
+          "message": "HTTP 200",
+          "detail": {
+            "final_url": "https://goidaucami.com/blog/massage-co-vai-gay-quan-4.html",
+            "redirected": false
+          }
+        },
+        {
+          "check": "title",
+          "status": "pass",
+          "message": "Title is 49 chars",
+          "detail": {
+            "title": "Massage Cổ Vai Gáy Quận 4 – Địa Chỉ Uy Tín | CAMI"
+          }
+        },
+        {
+          "check": "meta_description",
+          "status": "pass",
+          "message": "Meta description is 145 chars",
+          "detail": {
+            "description": "Đau cổ vai gáy kinh niên? Tìm hiểu nguyên nhân thật sự và cách massage Shiatsu chuyên sâu tại CAMI Quận 4 giúp giải phóng cơn đau chỉ sau 1 buổi."
+          }
+        },
+        {
+          "check": "canonical",
+          "status": "pass",
+          "message": "Canonical URL declared",
+          "detail": {
+            "canonical": "https://goidaucami.com/blog/massage-co-vai-gay-quan-4.html"
+          }
+        },
+        {
+          "check": "indexable",
+          "status": "pass",
+          "message": "Indexable (no robots noindex)",
+          "detail": null
+        },
+        {
+          "check": "mixed_content",
+          "status": "pass",
+          "message": "No mixed (http) content",
+          "detail": null
+        },
+        {
+          "check": "h1",
+          "status": "pass",
+          "message": "Exactly one <h1>",
+          "detail": {
+            "text": "Massage Cổ Vai Gáy Tại Quận 4 – Địa Chỉ Uy Tín Nhất TP.HCM"
+          }
+        },
+        {
+          "check": "heading_order",
+          "status": "pass",
+          "message": "Heading hierarchy is sequential",
+          "detail": null
+        },
+        {
+          "check": "img_alt",
+          "status": "pass",
+          "message": "All 8 images have alt text",
+          "detail": null
+        },
+        {
+          "check": "img_dimensions",
+          "status": "pass",
+          "message": "Every image sets width and height",
+          "detail": null
+        },
+        {
+          "check": "img_format",
+          "status": "info",
+          "message": "7 image(s) in legacy formats — WebP/AVIF are smaller",
+          "detail": {
+            "examples": [
+              "../images/logo.png",
+              "../images/service-body-1.png",
+              "../images/service-body-2.png",
+              "../images/interior-4.jpg",
+              "../images/service-shiatsu.png"
+            ]
+          }
+        },
+        {
+          "check": "viewport",
+          "status": "pass",
+          "message": "Viewport meta present",
+          "detail": null
+        },
+        {
+          "check": "lang",
+          "status": "pass",
+          "message": "lang=\"vi\"",
+          "detail": null
+        },
+        {
+          "check": "open_graph",
+          "status": "pass",
+          "message": "Open Graph title+description set",
+          "detail": {
+            "og": {
+              "og:title": "Massage Cổ Vai Gáy Tại Quận 4 – Địa Chỉ Uy Tín Nhất TP.HCM",
+              "og:description": "Bạn uống thuốc giảm đau rồi đau lại. Đây là lý do thật sự – và cách massage Shiatsu tại CAMI giải phóng cơn đau từ gốc rễ.",
+              "og:image": "https://goidaucami.com/images/service-body-1.png",
+              "og:type": "article"
+            }
+          }
+        },
+        {
+          "check": "twitter_card",
+          "status": "info",
+          "message": "No twitter:card tag",
+          "detail": null
+        },
+        {
+          "check": "structured_data",
+          "status": "pass",
+          "message": "Schema.org types: Article, BreadcrumbList, FAQPage",
+          "detail": {
+            "types": [
+              "Article",
+              "BreadcrumbList",
+              "FAQPage"
+            ]
+          }
+        },
+        {
+          "check": "word_count",
+          "status": "pass",
+          "message": "~1380 words of body text",
+          "detail": {
+            "words": 1380
+          }
+        },
+        {
+          "check": "links",
+          "status": "info",
+          "message": "13 internal, 5 external links",
+          "detail": {
+            "internal": 13,
+            "external": 5
+          }
+        }
+      ],
+      "links": [
+        "https://goidaucami.com/",
+        "https://goidaucami.com/#services",
+        "https://goidaucami.com/#offers",
+        "https://goidaucami.com/blog/",
+        "https://goidaucami.com/",
+        "https://goidaucami.com/#services",
+        "https://goidaucami.com/blog/",
+        "https://goidaucami.com/",
+        "https://goidaucami.com/blog/",
+        "https://goidaucami.com/blog/goi-dau-duong-sinh-la-gi.html",
+        "https://goidaucami.com/blog/head-spa-tphcm.html",
+        "https://goidaucami.com/",
+        "https://goidaucami.com/blog/",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153"
+      ]
+    },
+    {
+      "key": "p3",
+      "url": "https://goidaucami.com/blog/head-spa-tphcm.html",
+      "ok": true,
+      "score": 100,
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "pass": 16,
+        "info": 3
+      },
+      "findings": [
+        {
+          "check": "https",
+          "status": "pass",
+          "message": "Served over HTTPS",
+          "detail": null
+        },
+        {
+          "check": "status_code",
+          "status": "pass",
+          "message": "HTTP 200",
+          "detail": {
+            "final_url": "https://goidaucami.com/blog/head-spa-tphcm.html",
+            "redirected": false
+          }
+        },
+        {
+          "check": "title",
+          "status": "pass",
+          "message": "Title is 42 chars",
+          "detail": {
+            "title": "Head Spa Tại TP.HCM – Xu Hướng 2025 | CAMI"
+          }
+        },
+        {
+          "check": "meta_description",
+          "status": "pass",
+          "message": "Meta description is 147 chars",
+          "detail": {
+            "description": "Head spa không chỉ là trend – đây là liệu pháp phục hồi da đầu, giảm stress và cải thiện chất lượng tóc từ gốc rễ. Trải nghiệm tại CAMI từ chỉ 89K."
+          }
+        },
+        {
+          "check": "canonical",
+          "status": "pass",
+          "message": "Canonical URL declared",
+          "detail": {
+            "canonical": "https://goidaucami.com/blog/head-spa-tphcm.html"
+          }
+        },
+        {
+          "check": "indexable",
+          "status": "pass",
+          "message": "Indexable (no robots noindex)",
+          "detail": null
+        },
+        {
+          "check": "mixed_content",
+          "status": "pass",
+          "message": "No mixed (http) content",
+          "detail": null
+        },
+        {
+          "check": "h1",
+          "status": "pass",
+          "message": "Exactly one <h1>",
+          "detail": {
+            "text": "Head Spa Tại TP.HCM – Xu Hướng Chăm Sóc Tóc Mới Nhất 2025"
+          }
+        },
+        {
+          "check": "heading_order",
+          "status": "pass",
+          "message": "Heading hierarchy is sequential",
+          "detail": null
+        },
+        {
+          "check": "img_alt",
+          "status": "pass",
+          "message": "All 8 images have alt text",
+          "detail": null
+        },
+        {
+          "check": "img_dimensions",
+          "status": "pass",
+          "message": "Every image sets width and height",
+          "detail": null
+        },
+        {
+          "check": "img_format",
+          "status": "info",
+          "message": "7 image(s) in legacy formats — WebP/AVIF are smaller",
+          "detail": {
+            "examples": [
+              "../images/logo.png",
+              "../images/svc-detox-new.png",
+              "../images/interior-1.jpg",
+              "../images/svc-cami-relax.png",
+              "../images/service-shiatsu.png"
+            ]
+          }
+        },
+        {
+          "check": "viewport",
+          "status": "pass",
+          "message": "Viewport meta present",
+          "detail": null
+        },
+        {
+          "check": "lang",
+          "status": "pass",
+          "message": "lang=\"vi\"",
+          "detail": null
+        },
+        {
+          "check": "open_graph",
+          "status": "pass",
+          "message": "Open Graph title+description set",
+          "detail": {
+            "og": {
+              "og:title": "Head Spa Tại TP.HCM – Xu Hướng Chăm Sóc Tóc Mới Nhất 2025",
+              "og:description": "60 phút không nhìn màn hình, không nghĩ đến deadline — và lần đầu tiên trong nhiều tuần bạn ngủ được đến 6h sáng. Đó là head spa.",
+              "og:image": "https://goidaucami.com/images/svc-detox-new.png",
+              "og:type": "article"
+            }
+          }
+        },
+        {
+          "check": "twitter_card",
+          "status": "info",
+          "message": "No twitter:card tag",
+          "detail": null
+        },
+        {
+          "check": "structured_data",
+          "status": "pass",
+          "message": "Schema.org types: Article, BreadcrumbList, FAQPage",
+          "detail": {
+            "types": [
+              "Article",
+              "BreadcrumbList",
+              "FAQPage"
+            ]
+          }
+        },
+        {
+          "check": "word_count",
+          "status": "pass",
+          "message": "~1705 words of body text",
+          "detail": {
+            "words": 1705
+          }
+        },
+        {
+          "check": "links",
+          "status": "info",
+          "message": "13 internal, 5 external links",
+          "detail": {
+            "internal": 13,
+            "external": 5
+          }
+        }
+      ],
+      "links": [
+        "https://goidaucami.com/",
+        "https://goidaucami.com/#services",
+        "https://goidaucami.com/#offers",
+        "https://goidaucami.com/blog/",
+        "https://goidaucami.com/",
+        "https://goidaucami.com/#services",
+        "https://goidaucami.com/blog/",
+        "https://goidaucami.com/",
+        "https://goidaucami.com/blog/",
+        "https://goidaucami.com/blog/goi-dau-duong-sinh-la-gi.html",
+        "https://goidaucami.com/blog/massage-co-vai-gay-quan-4.html",
+        "https://goidaucami.com/",
+        "https://goidaucami.com/blog/",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153"
+      ]
+    },
+    {
+      "key": "p4",
+      "url": "https://goidaucami.com/blog/dau-hieu-dau-co-vai-gay.html",
+      "ok": true,
+      "score": 100,
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "pass": 16,
+        "info": 3
+      },
+      "findings": [
+        {
+          "check": "https",
+          "status": "pass",
+          "message": "Served over HTTPS",
+          "detail": null
+        },
+        {
+          "check": "status_code",
+          "status": "pass",
+          "message": "HTTP 200",
+          "detail": {
+            "final_url": "https://goidaucami.com/blog/dau-hieu-dau-co-vai-gay.html",
+            "redirected": false
+          }
+        },
+        {
+          "check": "title",
+          "status": "pass",
+          "message": "Title is 45 chars",
+          "detail": {
+            "title": "5 Dấu Hiệu Cổ Vai Gáy \"Kêu Cứu\" | CAMI Quận 4"
+          }
+        },
+        {
+          "check": "meta_description",
+          "status": "pass",
+          "message": "Meta description is 154 chars",
+          "detail": {
+            "description": "Đau cổ vai gáy không đến bất ngờ – cơ thể đã báo hiệu nhiều tuần trước. Nhận biết 5 dấu hiệu cổ vai gáy kêu cứu và cách xử lý sớm tại CAMI Quận 4, TP.HCM."
+          }
+        },
+        {
+          "check": "canonical",
+          "status": "pass",
+          "message": "Canonical URL declared",
+          "detail": {
+            "canonical": "https://goidaucami.com/blog/dau-hieu-dau-co-vai-gay.html"
+          }
+        },
+        {
+          "check": "indexable",
+          "status": "pass",
+          "message": "Indexable (no robots noindex)",
+          "detail": null
+        },
+        {
+          "check": "mixed_content",
+          "status": "pass",
+          "message": "No mixed (http) content",
+          "detail": null
+        },
+        {
+          "check": "h1",
+          "status": "pass",
+          "message": "Exactly one <h1>",
+          "detail": {
+            "text": "5 Dấu Hiệu Cổ Vai Gáy Đang \"Kêu Cứu\" – Đừng Bỏ Qua Trước Khi Quá Muộn"
+          }
+        },
+        {
+          "check": "heading_order",
+          "status": "pass",
+          "message": "Heading hierarchy is sequential",
+          "detail": null
+        },
+        {
+          "check": "img_alt",
+          "status": "pass",
+          "message": "All 7 images have alt text",
+          "detail": null
+        },
+        {
+          "check": "img_dimensions",
+          "status": "pass",
+          "message": "Every image sets width and height",
+          "detail": null
+        },
+        {
+          "check": "img_format",
+          "status": "info",
+          "message": "6 image(s) in legacy formats — WebP/AVIF are smaller",
+          "detail": {
+            "examples": [
+              "../images/logo.png",
+              "../images/service-body-3.png",
+              "../images/thugiandanong.png",
+              "../images/service-body-1.png",
+              "../images/service-shiatsu.png"
+            ]
+          }
+        },
+        {
+          "check": "viewport",
+          "status": "pass",
+          "message": "Viewport meta present",
+          "detail": null
+        },
+        {
+          "check": "lang",
+          "status": "pass",
+          "message": "lang=\"vi\"",
+          "detail": null
+        },
+        {
+          "check": "open_graph",
+          "status": "pass",
+          "message": "Open Graph title+description set",
+          "detail": {
+            "og": {
+              "og:title": "5 Dấu Hiệu Cổ Vai Gáy Đang 'Kêu Cứu' – Đừng Bỏ Qua Trước Khi Quá Muộn",
+              "og:description": "Cơn đau cổ vai gáy không đến bất ngờ. Nó đã báo hiệu cho bạn nhiều tuần – bạn chỉ chưa nghe. Nhận biết 5 dấu hiệu sớm ngay.",
+              "og:image": "https://goidaucami.com/images/service-body-3.png",
+              "og:type": "article",
+              "og:locale": "vi_VN"
+            }
+          }
+        },
+        {
+          "check": "twitter_card",
+          "status": "info",
+          "message": "No twitter:card tag",
+          "detail": null
+        },
+        {
+          "check": "structured_data",
+          "status": "pass",
+          "message": "Schema.org types: Article, BreadcrumbList, FAQPage",
+          "detail": {
+            "types": [
+              "Article",
+              "BreadcrumbList",
+              "FAQPage"
+            ]
+          }
+        },
+        {
+          "check": "word_count",
+          "status": "pass",
+          "message": "~1248 words of body text",
+          "detail": {
+            "words": 1248
+          }
+        },
+        {
+          "check": "links",
+          "status": "info",
+          "message": "15 internal, 5 external links",
+          "detail": {
+            "internal": 15,
+            "external": 5
+          }
+        }
+      ],
+      "links": [
+        "https://goidaucami.com/",
+        "https://goidaucami.com/#services",
+        "https://goidaucami.com/#offers",
+        "https://goidaucami.com/blog/",
+        "https://goidaucami.com/",
+        "https://goidaucami.com/#services",
+        "https://goidaucami.com/blog/",
+        "https://goidaucami.com/",
+        "https://goidaucami.com/blog/",
+        "https://goidaucami.com/blog/massage-co-vai-gay-quan-4.html",
+        "https://goidaucami.com/blog/massage-co-vai-gay-quan-4.html",
+        "https://goidaucami.com/blog/goi-dau-duong-sinh-la-gi.html",
+        "https://goidaucami.com/blog/ngam-chan-thao-moc.html",
+        "https://goidaucami.com/",
+        "https://goidaucami.com/blog/",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153"
+      ]
+    },
+    {
+      "key": "p5",
+      "url": "https://goidaucami.com/blog/goi-dau-bao-lau-thi-tot.html",
+      "ok": true,
+      "score": 100,
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "pass": 16,
+        "info": 3
+      },
+      "findings": [
+        {
+          "check": "https",
+          "status": "pass",
+          "message": "Served over HTTPS",
+          "detail": null
+        },
+        {
+          "check": "status_code",
+          "status": "pass",
+          "message": "HTTP 200",
+          "detail": {
+            "final_url": "https://goidaucami.com/blog/goi-dau-bao-lau-thi-tot.html",
+            "redirected": false
+          }
+        },
+        {
+          "check": "title",
+          "status": "pass",
+          "message": "Title is 54 chars",
+          "detail": {
+            "title": "Gội Đầu Bao Lâu Thì Tốt? \"Điểm Vàng\" 30-60 Phút | CAMI"
+          }
+        },
+        {
+          "check": "meta_description",
+          "status": "pass",
+          "message": "Meta description is 133 chars",
+          "detail": {
+            "description": "Gội đầu bao lâu thì tốt cho da đầu và tóc? Trên 60 phút có thể gây tổn thương, 30 đến 60 phút là điểm vàng. Tìm hiểu tại CAMI Quận 4."
+          }
+        },
+        {
+          "check": "canonical",
+          "status": "pass",
+          "message": "Canonical URL declared",
+          "detail": {
+            "canonical": "https://goidaucami.com/blog/goi-dau-bao-lau-thi-tot.html"
+          }
+        },
+        {
+          "check": "indexable",
+          "status": "pass",
+          "message": "Indexable (no robots noindex)",
+          "detail": null
+        },
+        {
+          "check": "mixed_content",
+          "status": "pass",
+          "message": "No mixed (http) content",
+          "detail": null
+        },
+        {
+          "check": "h1",
+          "status": "pass",
+          "message": "Exactly one <h1>",
+          "detail": {
+            "text": "Gội Đầu Bao Lâu Thì Tốt? Sự Thật Về \"Điểm Vàng\" 30–60 Phút Ít Ai Biết"
+          }
+        },
+        {
+          "check": "heading_order",
+          "status": "pass",
+          "message": "Heading hierarchy is sequential",
+          "detail": null
+        },
+        {
+          "check": "img_alt",
+          "status": "pass",
+          "message": "All 6 images have alt text",
+          "detail": null
+        },
+        {
+          "check": "img_dimensions",
+          "status": "pass",
+          "message": "Every image sets width and height",
+          "detail": null
+        },
+        {
+          "check": "img_format",
+          "status": "info",
+          "message": "5 image(s) in legacy formats — WebP/AVIF are smaller",
+          "detail": {
+            "examples": [
+              "../images/logo.png",
+              "../images/goisachthom.png",
+              "../images/service-shiatsu.png",
+              "../images/svc-detox-new.png",
+              "../images/ngamchandetox.png"
+            ]
+          }
+        },
+        {
+          "check": "viewport",
+          "status": "pass",
+          "message": "Viewport meta present",
+          "detail": null
+        },
+        {
+          "check": "lang",
+          "status": "pass",
+          "message": "lang=\"vi\"",
+          "detail": null
+        },
+        {
+          "check": "open_graph",
+          "status": "pass",
+          "message": "Open Graph title+description set",
+          "detail": {
+            "og": {
+              "og:title": "Gội Đầu Bao Lâu Thì Tốt? Sự Thật Về 'Điểm Vàng' 30–60 Phút Ít Ai Biết",
+              "og:description": "Gội đầu trên 60 phút không làm tóc sạch hơn – nó bào mòn hàng rào bảo vệ da đầu. Đây là thời gian gội đầu chuẩn theo nghiên cứu khoa học.",
+              "og:image": "https://goidaucami.com/images/goisachthom.png",
+              "og:type": "article",
+              "og:locale": "vi_VN"
+            }
+          }
+        },
+        {
+          "check": "twitter_card",
+          "status": "info",
+          "message": "No twitter:card tag",
+          "detail": null
+        },
+        {
+          "check": "structured_data",
+          "status": "pass",
+          "message": "Schema.org types: Article, BreadcrumbList, FAQPage",
+          "detail": {
+            "types": [
+              "Article",
+              "BreadcrumbList",
+              "FAQPage"
+            ]
+          }
+        },
+        {
+          "check": "word_count",
+          "status": "pass",
+          "message": "~1080 words of body text",
+          "detail": {
+            "words": 1080
+          }
+        },
+        {
+          "check": "links",
+          "status": "info",
+          "message": "15 internal, 5 external links",
+          "detail": {
+            "internal": 15,
+            "external": 5
+          }
+        }
+      ],
+      "links": [
+        "https://goidaucami.com/",
+        "https://goidaucami.com/#services",
+        "https://goidaucami.com/#offers",
+        "https://goidaucami.com/blog/",
+        "https://goidaucami.com/",
+        "https://goidaucami.com/#services",
+        "https://goidaucami.com/blog/",
+        "https://goidaucami.com/",
+        "https://goidaucami.com/blog/",
+        "https://goidaucami.com/blog/goi-dau-duong-sinh-la-gi.html",
+        "https://goidaucami.com/blog/goi-dau-duong-sinh-la-gi.html",
+        "https://goidaucami.com/blog/head-spa-tphcm.html",
+        "https://goidaucami.com/blog/ngam-chan-thao-moc.html",
+        "https://goidaucami.com/",
+        "https://goidaucami.com/blog/",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153"
+      ]
+    },
+    {
+      "key": "p6",
+      "url": "https://goidaucami.com/blog/ngam-chan-thao-moc.html",
+      "ok": true,
+      "score": 100,
+      "summary": {
+        "fail": 0,
+        "warn": 0,
+        "pass": 16,
+        "info": 3
+      },
+      "findings": [
+        {
+          "check": "https",
+          "status": "pass",
+          "message": "Served over HTTPS",
+          "detail": null
+        },
+        {
+          "check": "status_code",
+          "status": "pass",
+          "message": "HTTP 200",
+          "detail": {
+            "final_url": "https://goidaucami.com/blog/ngam-chan-thao-moc.html",
+            "redirected": false
+          }
+        },
+        {
+          "check": "title",
+          "status": "pass",
+          "message": "Title is 48 chars",
+          "detail": {
+            "title": "Ngâm Chân Thảo Mộc: 5-10 Phút Vàng | CAMI Quận 4"
+          }
+        },
+        {
+          "check": "meta_description",
+          "status": "pass",
+          "message": "Meta description is 141 chars",
+          "detail": {
+            "description": "Ngâm chân thảo mộc bao lâu là đủ? 5 đến 10 phút là thời gian vàng – ngâm quá lâu có thể phản tác dụng. Khám phá cách ngâm chân đúng tại CAMI."
+          }
+        },
+        {
+          "check": "canonical",
+          "status": "pass",
+          "message": "Canonical URL declared",
+          "detail": {
+            "canonical": "https://goidaucami.com/blog/ngam-chan-thao-moc.html"
+          }
+        },
+        {
+          "check": "indexable",
+          "status": "pass",
+          "message": "Indexable (no robots noindex)",
+          "detail": null
+        },
+        {
+          "check": "mixed_content",
+          "status": "pass",
+          "message": "No mixed (http) content",
+          "detail": null
+        },
+        {
+          "check": "h1",
+          "status": "pass",
+          "message": "Exactly one <h1>",
+          "detail": {
+            "text": "Ngâm Chân Thảo Mộc: 5–10 Phút \"Vàng\" Cho Giấc Ngủ Sâu Và Cơ Thể Nhẹ Nhõm"
+          }
+        },
+        {
+          "check": "heading_order",
+          "status": "pass",
+          "message": "Heading hierarchy is sequential",
+          "detail": null
+        },
+        {
+          "check": "img_alt",
+          "status": "pass",
+          "message": "All 6 images have alt text",
+          "detail": null
+        },
+        {
+          "check": "img_dimensions",
+          "status": "pass",
+          "message": "Every image sets width and height",
+          "detail": null
+        },
+        {
+          "check": "img_format",
+          "status": "info",
+          "message": "5 image(s) in legacy formats — WebP/AVIF are smaller",
+          "detail": {
+            "examples": [
+              "../images/logo.png",
+              "../images/ngamchandetox.png",
+              "../images/service-shiatsu.png",
+              "../images/service-body-3.png",
+              "../images/svc-detox-new.png"
+            ]
+          }
+        },
+        {
+          "check": "viewport",
+          "status": "pass",
+          "message": "Viewport meta present",
+          "detail": null
+        },
+        {
+          "check": "lang",
+          "status": "pass",
+          "message": "lang=\"vi\"",
+          "detail": null
+        },
+        {
+          "check": "open_graph",
+          "status": "pass",
+          "message": "Open Graph title+description set",
+          "detail": {
+            "og": {
+              "og:title": "Ngâm Chân Thảo Mộc: 5–10 Phút 'Vàng' Cho Giấc Ngủ Sâu Và Cơ Thể Nhẹ Nhõm",
+              "og:description": "Ngâm chân càng lâu càng tốt? Sai. Sau 10 phút, lợi ích bắt đầu đảo chiều. Đây là cách ngâm chân thảo mộc đúng chuẩn.",
+              "og:image": "https://goidaucami.com/images/ngamchandetox.png",
+              "og:type": "article",
+              "og:locale": "vi_VN"
+            }
+          }
+        },
+        {
+          "check": "twitter_card",
+          "status": "info",
+          "message": "No twitter:card tag",
+          "detail": null
+        },
+        {
+          "check": "structured_data",
+          "status": "pass",
+          "message": "Schema.org types: Article, BreadcrumbList, FAQPage",
+          "detail": {
+            "types": [
+              "Article",
+              "BreadcrumbList",
+              "FAQPage"
+            ]
+          }
+        },
+        {
+          "check": "word_count",
+          "status": "pass",
+          "message": "~963 words of body text",
+          "detail": {
+            "words": 963
+          }
+        },
+        {
+          "check": "links",
+          "status": "info",
+          "message": "14 internal, 5 external links",
+          "detail": {
+            "internal": 14,
+            "external": 5
+          }
+        }
+      ],
+      "links": [
+        "https://goidaucami.com/",
+        "https://goidaucami.com/#services",
+        "https://goidaucami.com/#offers",
+        "https://goidaucami.com/blog/",
+        "https://goidaucami.com/",
+        "https://goidaucami.com/#services",
+        "https://goidaucami.com/blog/",
+        "https://goidaucami.com/",
+        "https://goidaucami.com/blog/",
+        "https://goidaucami.com/blog/goi-dau-duong-sinh-la-gi.html",
+        "https://goidaucami.com/blog/dau-hieu-dau-co-vai-gay.html",
+        "https://goidaucami.com/blog/head-spa-tphcm.html",
+        "https://goidaucami.com/",
+        "https://goidaucami.com/blog/",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153",
+        "https://zalo.me/0909646153"
+      ]
+    }
+  ]
+}
