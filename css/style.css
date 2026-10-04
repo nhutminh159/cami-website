@@ -659,6 +659,12 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 /* Description */
 .svc-desc { font-size: .88rem; color: #8fa89a; line-height: 1.6; margin-bottom: 18px; }
 
+/* Health panel – centered header */
+.svc-name-center { text-align: center; margin-bottom: 12px; }
+.svc-name-sub { display: block; font-size: .8rem; font-weight: 500; color: #8fa89a; letter-spacing: .02em; margin-top: 2px; }
+.svc-gift-center { justify-content: center; }
+.svc-desc-center { text-align: center; }
+
 /* Steps */
 .svc-steps { list-style: none; display: flex; flex-direction: column; gap: 9px; margin-bottom: 24px; flex: 1; }
 .svc-steps li {
@@ -710,7 +716,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .svc-price-divider { width: 1px; align-self: stretch; background: rgba(201,151,26,.25); margin: 0 8px; }
 
 /* Add-ons grid */
-.svc-addon-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.svc-addon-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
 .svc-addon-card {
   background: rgba(255,255,255,.05); border: 1px solid rgba(201,151,26,.15);
   border-radius: var(--radius); padding: 20px 16px; text-align: center;
@@ -724,6 +730,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   display: flex; align-items: center; justify-content: center;
 }
 .svc-addon-icon svg { stroke: var(--gold2); }
+.svc-addon-tag {
+  font-size: .62rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 700;
+  color: var(--gold); opacity: .85; margin-top: 2px;
+}
 .svc-addon-name { font-size: .83rem; color: var(--cream2); font-weight: 600; line-height: 1.35; }
 .svc-addon-price { font-size: 1.1rem; font-weight: 800; color: var(--gold2); font-family: 'Playfair Display', serif; }
 .svc-addon-note {
@@ -766,7 +776,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 /* ===== OFFERS ===== */
 .offers { background: var(--green2); }
-.offers-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.offers-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 860px; margin: 0 auto; }
 .offer-card {
   border-radius: var(--radius-lg); overflow: hidden;
   border: 1px solid rgba(201,151,26,.25);
@@ -833,6 +843,13 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .offer-img { aspect-ratio: 3/4; overflow: hidden; }
 .offer-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s; }
 .offer-card:hover .offer-img img { transform: scale(1.05); }
+/* Poster ngang trong khung dọc: hiện trọn ảnh, nền mờ lấp khoảng trống */
+.offer-img-fit img { position: relative; z-index: 1; object-fit: contain; }
+.offer-img-fit .offer-img-backdrop {
+  position: absolute; inset: 0; z-index: 0; object-fit: cover;
+  filter: blur(22px) brightness(.8); transform: scale(1.2);
+}
+.offer-card:hover .offer-img-fit .offer-img-backdrop { transform: scale(1.25); }
 .offer-body { padding: 22px 24px; }
 .offer-body h3 { font-size: 1.1rem; color: var(--cream); margin-bottom: 8px; }
 .offer-body p { font-size: .85rem; color: #8fa89a; line-height: 1.6; }
@@ -903,6 +920,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 /* ===== TUYEN DUNG ===== */
 .recruit { background: var(--cream2); }
+.recruit .sec-head p { text-wrap: balance; }
 
 .recruit-layout {
   display: grid;
@@ -977,6 +995,43 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .rdt-card h3 { font-size: .82rem; font-weight: 600; color: var(--green); margin: 0 0 4px; }
 .rdt-card p { font-size: .8rem; color: #555; margin: 0; line-height: 1.45; }
+
+/* Thu nhập + cơ chế lương */
+.recruit-block-title {
+  font-size: .72rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase;
+  color: var(--gold); margin: 0 0 12px;
+}
+.recruit-income {
+  background: #fff; border: 1px solid rgba(201,151,26,.28);
+  border-radius: var(--radius-lg); padding: 20px 22px;
+  box-shadow: 0 2px 12px rgba(14,43,34,.07); margin-bottom: 20px;
+}
+.ri-salary { display: flex; align-items: stretch; }
+.ri-salary-opt { flex: 1; text-align: center; display: flex; flex-direction: column; gap: 2px; }
+.ri-role { font-size: .8rem; font-weight: 600; color: var(--green); }
+.ri-amount {
+  font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700;
+  color: var(--green); line-height: 1.15; font-variant-numeric: tabular-nums;
+}
+.ri-unit { font-size: .72rem; color: #6b6b6b; }
+.ri-divider { width: 1px; background: rgba(201,151,26,.3); margin: 4px 12px; }
+.ri-note {
+  text-align: center; font-size: .78rem; color: #6b6b6b; font-style: italic;
+  margin: 12px 0 14px; padding-bottom: 14px; border-bottom: 1px dashed rgba(201,151,26,.3);
+}
+.ri-extras { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: center; }
+.ri-extras li { display: flex; align-items: center; gap: 6px; font-size: .88rem; font-weight: 600; color: #333; }
+.ri-extras li svg { flex-shrink: 0; stroke: var(--gold); }
+
+.recruit-modes { margin-bottom: 20px; }
+.rm-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.rm-chip {
+  padding: 8px 16px; border-radius: 100px;
+  background: var(--green); color: var(--cream);
+  font-size: .82rem; font-weight: 600;
+}
+
+.recruit-cta-note { font-size: .82rem; color: #555; line-height: 1.55; margin: 14px 0 0; }
 
 .recruit-fit { margin-bottom: 24px; }
 .recruit-fit-title {

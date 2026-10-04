@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://goidaucami.com/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>https://goidaucami.com/blog/</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -73,8 +73,38 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-      <image:loc>https://goidaucami.com/images/ngamchandetox.png</image:loc>
+      <image:loc>https://goidaucami.com/images/ngam-chan-thao-moc.jpg</image:loc>
       <image:title>Ngâm chân thảo mộc tại CAMI</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://goidaucami.com/blog/goi-dau-duong-sinh-gia-bao-nhieu.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://goidaucami.com/images/cac-buoc-goi-dau-cami.jpg</image:loc>
+      <image:title>Bảng giá gội đầu dưỡng sinh CAMI 2026</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://goidaucami.com/blog/detox-da-dau-la-gi.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://goidaucami.com/images/detox-da-dau.jpg</image:loc>
+      <image:title>Detox da đầu giảm gàu ngứa</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://goidaucami.com/blog/cach-goi-dau-dung-cach.html</loc>
+    <lastmod>2026-10-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://goidaucami.com/images/cach-goi-dau-dung-cach.jpg</image:loc>
+      <image:title>Cách gội đầu đúng cách</image:title>
     </image:image>
   </url>
 </urlset>
